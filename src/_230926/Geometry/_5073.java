@@ -1,4 +1,4 @@
-package _230926;
+package _230926.Geometry;
 
 import java.util.Scanner;
 
