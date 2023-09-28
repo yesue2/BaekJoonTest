@@ -1,6 +1,5 @@
 package _230928.Sort;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _2750 {
@@ -14,7 +13,16 @@ public class _2750 {
             number[i] = scanner.nextInt();
         }
 
-        Arrays.sort(number);
+        int tmp;
+        for (int i = 0; i < count; i++) {
+            for (int j = i+1; j < count; j++) {
+                if(number[i] > number[j]) {
+                    tmp = number[i];
+                    number[i] = number[j];
+                    number[j] = tmp;
+                }
+            }
+        }
 
 
         for (int i = 0; i < number.length; i++) {
