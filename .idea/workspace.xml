@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2587 success">
-      <change afterPath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -63,7 +66,7 @@
       <workItem from="1695726635182" duration="12000" />
       <workItem from="1695726651618" duration="1492000" />
       <workItem from="1695730729592" duration="1657000" />
-      <workItem from="1695732431999" duration="13153000" />
+      <workItem from="1695732431999" duration="15284000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
