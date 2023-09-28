@@ -1,0 +1,56 @@
+Index: src/_230928/Sort/_25305.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package _230928.Sort;\r\n\r\nimport java.io.BufferedReader;\r\nimport java.io.IOException;\r\nimport java.io.InputStreamReader;\r\n\r\npublic class _25305 {\r\n    public static void main(String[] args) throws IOException {\r\n        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));\r\n\r\n        int\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/_230928/Sort/_25305.java b/src/_230928/Sort/_25305.java
+--- a/src/_230928/Sort/_25305.java	(revision 2cf05058a38cba21b60e789c96584b345b073b82)
++++ b/src/_230928/Sort/_25305.java	(date 1695906602530)
+@@ -8,6 +8,6 @@
+     public static void main(String[] args) throws IOException {
+         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+ 
+-        int
++
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b27758e1-714e-4837-a0c3-a5a23b542871\" name=\"Changes\" comment=\"2587 success\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/_230928/Sort/_25305.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 1\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2VvpuovoXFKmMTyshTVXUQehP6I\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Modules\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b27758e1-714e-4837-a0c3-a5a23b542871\" name=\"Changes\" comment=\"\" />\r\n      <created>1695726634185</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1695726634185</updated>\r\n      <workItem from=\"1695726635182\" duration=\"12000\" />\r\n      <workItem from=\"1695726651618\" duration=\"1492000\" />\r\n      <workItem from=\"1695730729592\" duration=\"1657000\" />\r\n      <workItem from=\"1695732431999\" duration=\"13153000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"success\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695727445802</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695727445802</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"5073 success\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695737909099</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695737909099</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"2798 success\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695744182721</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695744182721</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"2750 success\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695900435708</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695900435708</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"2750 success plus\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695903038127</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695903038127</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"2587 success\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1695904726380</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1695904726380</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"success\" />\r\n    <MESSAGE value=\"5073 success\" />\r\n    <MESSAGE value=\"2798 success\" />\r\n    <MESSAGE value=\"2750 success\" />\r\n    <MESSAGE value=\"2750 success plus\" />\r\n    <MESSAGE value=\"2587 success\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"2587 success\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2cf05058a38cba21b60e789c96584b345b073b82)
++++ b/.idea/workspace.xml	(date 1695907207196)
+@@ -5,8 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2587 success">
+-      <change afterPath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_230928/Sort/_25305.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -40,7 +40,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+     "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master",
++    "git-widget-placeholder": "Rebasing master",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -63,7 +63,7 @@
+       <workItem from="1695726635182" duration="12000" />
+       <workItem from="1695726651618" duration="1492000" />
+       <workItem from="1695730729592" duration="1657000" />
+-      <workItem from="1695732431999" duration="13153000" />
++      <workItem from="1695732431999" duration="14511000" />
+     </task>
+     <task id="LOCAL-00001" summary="success">
+       <option name="closed" value="true" />
