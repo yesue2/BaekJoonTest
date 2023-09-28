@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2798 success">
-      <change afterPath="$PROJECT_DIR$/src/_230928/Sort/_2750.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2750 success">
+      <change afterPath="$PROJECT_DIR$/src/_230928/Sort/_2750_BufferedReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_230926/BruteForce/_1018.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
       <workItem from="1695726635182" duration="12000" />
       <workItem from="1695726651618" duration="1492000" />
       <workItem from="1695730729592" duration="1657000" />
-      <workItem from="1695732431999" duration="8790000" />
+      <workItem from="1695732431999" duration="10372000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -89,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695744182721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2750 success">
+      <option name="closed" value="true" />
+      <created>1695900435708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695900435708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +106,7 @@
     <MESSAGE value="success" />
     <MESSAGE value="5073 success" />
     <MESSAGE value="2798 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="2798 success" />
+    <MESSAGE value="2750 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="2750 success" />
   </component>
 </project>
