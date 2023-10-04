@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1427 success">
-      <change afterPath="$PROJECT_DIR$/src/_231003/Sort3/_11650.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_231003/Sort3/_1181.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="11650 success">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_230929/Sort2/_1427.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_230929/Sort2/_1427.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_231003/Sort3/_1181.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_231004/Sort4/_1181.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,10 @@
       <workItem from="1695730729592" duration="1657000" />
       <workItem from="1695732431999" duration="19145000" />
       <workItem from="1695914004292" duration="8279000" />
-      <workItem from="1696327252418" duration="2136000" />
+      <workItem from="1696327252418" duration="2494000" />
+      <workItem from="1696420455875" duration="333000" />
+      <workItem from="1696420825926" duration="488000" />
+      <workItem from="1696421436650" duration="377000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -161,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695987531480</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="11650 success">
+      <option name="closed" value="true" />
+      <created>1696329721632</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696329721632</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +199,7 @@
     <MESSAGE value="test1" />
     <MESSAGE value="2751 success" />
     <MESSAGE value="1427 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1427 success" />
+    <MESSAGE value="11650 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="11650 success" />
   </component>
 </project>
