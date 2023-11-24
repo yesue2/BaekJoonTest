@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="9093 success">
-      <change afterPath="$PROJECT_DIR$/src/_231117/_10828.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="10828 no success">
+      <change afterPath="$PROJECT_DIR$/src/_231118/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_231123/Greedy/_18185.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +74,13 @@
       <workItem from="1696420825926" duration="488000" />
       <workItem from="1696421436650" duration="9063000" />
       <workItem from="1700151933910" duration="2844000" />
-      <workItem from="1700306614782" duration="1582000" />
+      <workItem from="1700306614782" duration="4075000" />
+      <workItem from="1700392460642" duration="2676000" />
+      <workItem from="1700397217072" duration="115000" />
+      <workItem from="1700398448849" duration="682000" />
+      <workItem from="1700468035849" duration="48000" />
+      <workItem from="1700475617299" duration="24000" />
+      <workItem from="1700749118201" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -195,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696690015703</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="10828 no success">
+      <option name="closed" value="true" />
+      <created>1700312627607</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700312627607</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +244,7 @@
     <MESSAGE value="1181 success" />
     <MESSAGE value="10828 success" />
     <MESSAGE value="9093 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="9093 success" />
+    <MESSAGE value="10828 no success" />
+    <option name="LAST_COMMIT_MESSAGE" value="10828 no success" />
   </component>
 </project>
