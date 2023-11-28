@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="10828 no success">
-      <change afterPath="$PROJECT_DIR$/src/_231118/DFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_231123/Greedy/_18185.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="231124">
+      <change afterPath="$PROJECT_DIR$/src/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_231123/Greedy/_18185.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_231123/Greedy/_18185.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <workItem from="1700398448849" duration="682000" />
       <workItem from="1700468035849" duration="48000" />
       <workItem from="1700475617299" duration="24000" />
-      <workItem from="1700749118201" duration="1286000" />
+      <workItem from="1700749118201" duration="14893000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -210,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700312627607</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="231124">
+      <option name="closed" value="true" />
+      <created>1700841383137</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700841383137</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +253,7 @@
     <MESSAGE value="10828 success" />
     <MESSAGE value="9093 success" />
     <MESSAGE value="10828 no success" />
-    <option name="LAST_COMMIT_MESSAGE" value="10828 no success" />
+    <MESSAGE value="231124" />
+    <option name="LAST_COMMIT_MESSAGE" value="231124" />
   </component>
 </project>
