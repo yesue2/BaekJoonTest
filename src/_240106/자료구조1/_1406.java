@@ -27,23 +27,44 @@ public class _1406 {
 
             switch (st.nextToken()) {
                 case "L":
-                    tmp.push(stack.pop());
-                    break;
+                    if(stack.empty())
+                        break;
+                    else {
+                        tmp.push(stack.pop());
+                        break;
+                    }
 
                 case "D":
-                    stack.push(tmp.pop());
-                    break;
+                    if(tmp.empty())
+                        break;
+                    else {
+                        stack.push(tmp.pop());
+                        break;
+                    }
 
                 case "B":
-                    stack.pop();
-                    break;
+                    if(stack.empty())
+                        break;
+                    else {
+                        stack.pop();
+                        break;
+                    }
 
-                case "p":
+                case "P":
                     stack.push(st.nextToken());
                     break;
             }
         }
-        sb.append(stack).append(tmp);
+
+        while (!stack.empty()) {
+            sb.append(stack.pop());
+        }
+        sb.reverse();
+
+        while (!tmp.empty()) {
+            sb.append(tmp.pop());
+        }
+
         System.out.println(sb);
     }
 }
