@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1406 success">
-      <change afterPath="$PROJECT_DIR$/src/_240109/자료구조1/_10845.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="10845 success">
+      <change afterPath="$PROJECT_DIR$/src/_240109/자료구조1/_1158.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +82,7 @@
       <workItem from="1700475617299" duration="24000" />
       <workItem from="1700749118201" duration="16327000" />
       <workItem from="1701932481024" duration="20000" />
-      <workItem from="1704434812528" duration="33725000" />
+      <workItem from="1704434812528" duration="39766000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -284,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704726552683</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="10845 success">
+      <option name="closed" value="true" />
+      <created>1704729185757</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1704729185757</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +332,7 @@
     <MESSAGE value="1874 success" />
     <MESSAGE value="1406 fail" />
     <MESSAGE value="1406 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1406 success" />
+    <MESSAGE value="10845 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="10845 success" />
   </component>
 </project>
