@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1929 success">
-      <change afterPath="$PROJECT_DIR$/src/_240111/수학1/_6588.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="6588 success">
+      <change afterPath="$PROJECT_DIR$/src/_240111/수학1/_10872.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +83,7 @@
       <workItem from="1700749118201" duration="16327000" />
       <workItem from="1701932481024" duration="20000" />
       <workItem from="1704434812528" duration="72848000" />
-      <workItem from="1704945952831" duration="18459000" />
+      <workItem from="1704945952831" duration="19654000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -365,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704951459367</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="6588 success">
+      <option name="closed" value="true" />
+      <created>1704974091978</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1704974091978</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,7 +391,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test2" />
     <MESSAGE value="25305 success" />
     <MESSAGE value="test1" />
     <MESSAGE value="2751 success" />
@@ -408,6 +415,7 @@
     <MESSAGE value="1978 success" />
     <MESSAGE value="1929 processing" />
     <MESSAGE value="1929 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1929 success" />
+    <MESSAGE value="6588 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="6588 success" />
   </component>
 </project>
