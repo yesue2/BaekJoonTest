@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="9613 success">
-      <change afterPath="$PROJECT_DIR$/src/_240117/수학1_연습/_17087.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240117/수학1_연습/_17087.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240117/수학1_연습/_17087.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._9613" />
         <item itemvalue="Application._1676" />
+        <item itemvalue="Application._9613" />
         <item itemvalue="Application._10872" />
       </list>
     </recent_temporary>
@@ -132,6 +132,7 @@
       <workItem from="1701932481024" duration="20000" />
       <workItem from="1704434812528" duration="72848000" />
       <workItem from="1704945952831" duration="45265000" />
+      <workItem from="1705482209662" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />

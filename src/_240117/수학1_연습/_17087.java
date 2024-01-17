@@ -13,23 +13,20 @@ public class _17087 {
         int N = Integer.parseInt(st.nextToken());
         int S = Integer.parseInt(st.nextToken());
         int[] arr = new int[N];
-        long all;
-        long result = 0;
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Math.abs(Integer.parseInt(st.nextToken()) - S);
         }
 
-        int first = arr[0];
+        long result = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            all = gcd(first, arr[i]);
-            result = Math.max(result, all);
+            result = gcd(result, arr[i]);
         }
         System.out.println(result);
     }
 
-    public static int gcd (int a, int b) {
+    public static long gcd (long a, long b) {
         if (b == 0)
             return a;
         return gcd(b, a%b);
