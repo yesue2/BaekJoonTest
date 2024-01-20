@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1212 success">
-      <change afterPath="$PROJECT_DIR$/src/_240118/다이나믹프로그래밍1/_1463.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_240119/다이나믹프로그래밍1/_1463.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1463 success">
+      <change afterPath="$PROJECT_DIR$/src/_240120/다이나믹프로그래밍1/_11726.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,25 +37,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/project/BaekJoonTest",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/BaekJoonTest&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +85,9 @@
       <workItem from="1704434812528" duration="72848000" />
       <workItem from="1704945952831" duration="45265000" />
       <workItem from="1705482209662" duration="3753000" />
-      <workItem from="1705489776228" duration="22761000" />
+      <workItem from="1705489776228" duration="24642000" />
+      <workItem from="1705667804416" duration="8000" />
+      <workItem from="1705667833718" duration="5647000" />
     </task>
     <task id="LOCAL-00001" summary="success">
       <option name="closed" value="true" />
@@ -432,7 +433,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705559823846</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="1463 success">
+      <option name="closed" value="true" />
+      <created>1705642451662</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1705642451662</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +459,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="231124" />
     <MESSAGE value="10828 success" />
     <MESSAGE value="9093 success" />
     <MESSAGE value="9012 success" />
@@ -475,6 +483,7 @@
     <MESSAGE value="17087 success" />
     <MESSAGE value="1373 success" />
     <MESSAGE value="1212 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1212 success" />
+    <MESSAGE value="1463 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="1463 success" />
   </component>
 </project>
