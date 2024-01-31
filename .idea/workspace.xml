@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="11726 success">
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="3075 success">
+      <change afterPath="$PROJECT_DIR$/src/_240131/브루트포스/_1476.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240131/브루트포스/_3085.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240131/브루트포스/_3085.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +40,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application._1476.executor": "Run",
     "Application._3085.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -463,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705754903326</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="3075 success">
+      <option name="closed" value="true" />
+      <created>1706686180155</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1706686180155</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="9012 success" />
     <MESSAGE value="1874 success" />
     <MESSAGE value="1406 fail" />
     <MESSAGE value="1406 success" />
@@ -506,6 +515,7 @@
     <MESSAGE value="1463 success" />
     <MESSAGE value="11726 success" />
     <MESSAGE value="2309 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="2309 success" />
+    <MESSAGE value="3075 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="3075 success" />
   </component>
 </project>
