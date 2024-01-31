@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="3075 success">
-      <change afterPath="$PROJECT_DIR$/src/_240131/브루트포스/_1476.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1476 success">
+      <change afterPath="$PROJECT_DIR$/src/_240131/브루트포스/_1107.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yesue2"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="5515aa99-fb27-404e-a3d4-fb4cdb99c808" />
+        <option name="url" value="https://github.com/yesue2/BaekJoonTest.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -40,6 +54,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application._1107.executor": "Debug",
     "Application._1476.executor": "Run",
     "Application._3085.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -473,7 +488,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706686180155</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="1476 success">
+      <option name="closed" value="true" />
+      <created>1706693576716</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1706693576716</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1874 success" />
     <MESSAGE value="1406 fail" />
     <MESSAGE value="1406 success" />
     <MESSAGE value="10845 success" />
@@ -516,6 +538,7 @@
     <MESSAGE value="11726 success" />
     <MESSAGE value="2309 success" />
     <MESSAGE value="3075 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="3075 success" />
+    <MESSAGE value="1476 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="1476 success" />
   </component>
 </project>
