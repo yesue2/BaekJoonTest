@@ -77,6 +77,30 @@ public class _14500 {
                 max = Math.max(max, sum);
             }
         }
+        for (int i = 0; i < N - 1; i++) {
+            for (int j = 0; j < M - 2; j++) {
+                int sum = num[i][j] + num[i][j+1] + num[i][j+2] + num[i+1][j];
+                max = Math.max(max, sum);
+            }
+        }
+        for (int i = 0; i < N - 2; i++) {
+            for (int j = 0; j < M - 1; j++) {
+                int sum = num[i][j] + num[i+1][j] + num[i+2][j] + num[i+2][j+1];
+                max = Math.max(max, sum);
+            }
+        }
+        for (int i = 0; i < N - 1; i++) {
+            for (int j = 0; j < M - 2; j++) {
+                int sum = num[i+1][j] + num[i+1][j+1] + num[i+1][j+2] + num[i][j+2];
+                max = Math.max(max, sum);
+            }
+        }
+        for (int i = 0; i < N - 2; i++) {
+            for (int j = 0; j < M - 1; j++) {
+                int sum = num[i][j] + num[i][j+1] + num[i+1][j+1] + num[i+2][j+1];
+                max = Math.max(max, sum);
+            }
+        }
         four(num, N, M, max);
         return max;
     }
