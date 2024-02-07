@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1260 success">
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="dfs modify">
+      <change afterPath="$PROJECT_DIR$/src/_240207/큐와_그래프/_11724.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_240206/DFS/DFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240206/DFS/DFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240206/큐와_그래프/_1260.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240207/큐와_그래프/_1260.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -58,6 +61,7 @@
     "Application.BFS.executor": "Run",
     "Application.DFS.executor": "Run",
     "Application._1107.executor": "Debug",
+    "Application._11724.executor": "Run",
     "Application._1260.executor": "Run",
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
@@ -125,15 +129,7 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="34348000" />
-    </task>
-    <task id="LOCAL-00005" summary="2750 success plus">
-      <option name="closed" value="true" />
-      <created>1695903038127</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1695903038127</updated>
+      <workItem from="1707119493822" duration="44421000" />
     </task>
     <task id="LOCAL-00006" summary="2587 success">
       <option name="closed" value="true" />
@@ -519,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707290304601</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="dfs modify">
+      <option name="closed" value="true" />
+      <created>1707294599571</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1707294599571</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10799 success" />
     <MESSAGE value="17298 success" />
     <MESSAGE value="2609 success" />
     <MESSAGE value="1934 success" />
@@ -562,6 +565,7 @@
     <MESSAGE value="bfs study" />
     <MESSAGE value="dfs study" />
     <MESSAGE value="1260 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1260 success" />
+    <MESSAGE value="dfs modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="dfs modify" />
   </component>
 </project>

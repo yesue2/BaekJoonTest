@@ -1,5 +1,7 @@
 package _240206.DFS;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Stack;
 
 public class DFS {
@@ -14,14 +16,41 @@ public class DFS {
             {1,6},
             {4,6}
     };
+    static boolean[] visited;
+    static StringBuilder sb;
     public static void main(String[] args) {
+        sb = new StringBuilder();
+
+        visited = new boolean[graph.length];
+
         // 1 7 6 8 4 3 2 5
-        System.out.println(dfs(1));
+        dfs(1);
+        sb.append('\n');
+
+        visited = new boolean[graph.length];
+        dfsStack(1);
+
+        System.out.println(sb);
     }
-    static String dfs(int start) {
-        StringBuilder sb = new StringBuilder();
+
+    // 재귀 사용
+    static void dfs(int start) {
+        if (visited[start]) return;
+
+        visited[start] = true;
+        sb.append(start + " ");
+
+        for (int i = 0; i < graph[start].length; i++) {
+            int adjacentNode = graph[start][i];
+            dfs(adjacentNode); // 재귀 호출
+        }
+    }
+
+
+    // 스택 사용
+    static String dfsStack(int start) {
         Stack<Integer> stack = new Stack<>();
-        boolean[] visited = new boolean[graph.length];
+        visited = new boolean[graph.length];
 
         stack.add(start);
 
