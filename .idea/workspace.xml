@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="14500 processing">
-      <change afterPath="$PROJECT_DIR$/src/_240206/BFS/BFS.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="bfs study">
+      <change afterPath="$PROJECT_DIR$/src/_240206/BFS/_1697.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_240206/DFS/DFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_240206/큐와_그래프/_1260.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240204/브루트포스/_14500.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240204/브루트포스/_14500.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BFS.executor": "Run",
+    "Application.DFS.executor": "Run",
     "Application._1107.executor": "Debug",
+    "Application._1260.executor": "Run",
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
     "Application._3085.executor": "Run",
@@ -123,15 +126,7 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="13496000" />
-    </task>
-    <task id="LOCAL-00002" summary="5073 success">
-      <option name="closed" value="true" />
-      <created>1695737909099</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1695737909099</updated>
+      <workItem from="1707119493822" duration="30661000" />
     </task>
     <task id="LOCAL-00003" summary="2798 success">
       <option name="closed" value="true" />
@@ -517,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707139917903</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="bfs study">
+      <option name="closed" value="true" />
+      <created>1707223126439</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1707223126439</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,7 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10845 success" />
     <MESSAGE value="1158 success" />
     <MESSAGE value="17413 success" />
     <MESSAGE value="10799 success" />
@@ -560,6 +562,7 @@
     <MESSAGE value="1476 success" />
     <MESSAGE value="1107 success" />
     <MESSAGE value="14500 processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="14500 processing" />
+    <MESSAGE value="bfs study" />
+    <option name="LAST_COMMIT_MESSAGE" value="bfs study" />
   </component>
 </project>
