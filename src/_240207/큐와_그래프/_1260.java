@@ -1,4 +1,4 @@
-package _240206.큐와_그래프;
+package _240207.큐와_그래프;
 
 import java.io.BufferedReader;
 import java.io.IOException;
