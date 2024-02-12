@@ -65,10 +65,10 @@ public class _1707 {
                         return;
                     } else if (color[next] == 0) {  // 인접 노드의 색이 0일 때
                         queue.add(next);
-                        if (color[start] == 1)  // 시작 노드의 색이 1일 때
-                            color[next] = 2;
+                        if (color[start] == 1)  // 기준 노드의 색이 1일 때
+                            color[next] = 2;  // 인접 노드의 색 2로 주입
                         else
-                            color[next] = 1;
+                            color[next] = 1;  // 인접 노드의 색 1 주입
                     }
                 }
             }

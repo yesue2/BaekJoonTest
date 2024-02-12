@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1707 success">
-      <change afterPath="$PROJECT_DIR$/src/_240208/큐와_그래프/_2667.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2667 processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240207/큐와_그래프/_1707.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240207/큐와_그래프/_1707.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
     "Application._1707.executor": "Run",
+    "Application._2667.executor": "Run",
     "Application._3085.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -86,6 +88,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_240208.큐와_그래프" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -129,15 +136,7 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="57268000" />
-    </task>
-    <task id="LOCAL-00008" summary="25305 success">
-      <option name="closed" value="true" />
-      <created>1695982557743</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1695982557743</updated>
+      <workItem from="1707119493822" duration="62481000" />
     </task>
     <task id="LOCAL-00009" summary="test1">
       <option name="closed" value="true" />
@@ -523,7 +522,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707394941444</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="2667 processing">
+      <option name="closed" value="true" />
+      <created>1707463236759</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1707463236759</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +548,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1934 success" />
     <MESSAGE value="1978 success" />
     <MESSAGE value="1929 processing" />
     <MESSAGE value="1929 success" />
@@ -566,6 +572,7 @@
     <MESSAGE value="dfs modify" />
     <MESSAGE value="11724 success" />
     <MESSAGE value="1707 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1707 success" />
+    <MESSAGE value="2667 processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="2667 processing" />
   </component>
 </project>
