@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2667 success">
-      <change afterPath="$PROJECT_DIR$/src/_240213/큐와_그래프/_2178.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2178 success">
+      <change afterPath="$PROJECT_DIR$/src/_240213/큐와_그래프/_7576.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,7 @@
     "Application._2178.executor": "Run",
     "Application._2667.executor": "Debug",
     "Application._3085.executor": "Run",
+    "Application._7576.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -137,15 +137,7 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="74007000" />
-    </task>
-    <task id="LOCAL-00012" summary="11650 success">
-      <option name="closed" value="true" />
-      <created>1696329721632</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1696329721632</updated>
+      <workItem from="1707119493822" duration="82472000" />
     </task>
     <task id="LOCAL-00013" summary="1181 success">
       <option name="closed" value="true" />
@@ -531,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707812793040</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="2178 success">
+      <option name="closed" value="true" />
+      <created>1707819440256</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1707819440256</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1929 processing" />
     <MESSAGE value="1929 success" />
     <MESSAGE value="6588 success" />
     <MESSAGE value="10872 success" />
@@ -574,7 +573,8 @@
     <MESSAGE value="1707 success" />
     <MESSAGE value="2667 processing" />
     <MESSAGE value="2667 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="2667 success" />
+    <MESSAGE value="2178 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="2178 success" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
