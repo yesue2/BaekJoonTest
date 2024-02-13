@@ -35,6 +35,7 @@ public class _1697 {
 
         while (!queue.isEmpty()) {
             int dis = queue.poll();
+            // 수빈이가 갈 수 있는 위치 변수 구현
             int[] dx = {1, -1, dis*2 - dis};
 
             for (int i = 0; i < 3; i++) {
