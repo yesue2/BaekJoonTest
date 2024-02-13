@@ -23,7 +23,6 @@ public class _2667  {
             for (int j = 0; j < N; j++) {
                 map[i][j] = tmp.charAt(j)-'0';
             }
-
         }
 
         ArrayList<Integer> arr = new ArrayList<>();

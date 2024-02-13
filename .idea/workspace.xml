@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2667 processing">
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2667 success">
+      <change afterPath="$PROJECT_DIR$/src/_240213/큐와_그래프/_2178.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240209/큐와_그래프/_2667.java" afterDir="false" />
     </list>
@@ -65,7 +66,8 @@
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
     "Application._1707.executor": "Run",
-    "Application._2667.executor": "Run",
+    "Application._2178.executor": "Run",
+    "Application._2667.executor": "Debug",
     "Application._3085.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -83,7 +85,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "settings.space",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -135,23 +137,7 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="66746000" />
-    </task>
-    <task id="LOCAL-00010" summary="2751 success">
-      <option name="closed" value="true" />
-      <created>1695986851553</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1695986851553</updated>
-    </task>
-    <task id="LOCAL-00011" summary="1427 success">
-      <option name="closed" value="true" />
-      <created>1695987531480</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1695987531480</updated>
+      <workItem from="1707119493822" duration="74007000" />
     </task>
     <task id="LOCAL-00012" summary="11650 success">
       <option name="closed" value="true" />
@@ -529,7 +515,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707749939083</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="2667 success">
+      <option name="closed" value="true" />
+      <created>1707811733073</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1707811733073</updated>
+    </task>
+    <task id="LOCAL-00060" summary="2667 success">
+      <option name="closed" value="true" />
+      <created>1707812793040</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1707812793040</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1978 success" />
     <MESSAGE value="1929 processing" />
     <MESSAGE value="1929 success" />
     <MESSAGE value="6588 success" />
@@ -572,6 +573,11 @@
     <MESSAGE value="11724 success" />
     <MESSAGE value="1707 success" />
     <MESSAGE value="2667 processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="2667 processing" />
+    <MESSAGE value="2667 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="2667 success" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
