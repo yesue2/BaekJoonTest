@@ -8,7 +8,7 @@ import java.util.*;
 public class _2667  {
     static int N;
     static int[][] map;
-    static int houseCnt;
+    static int houseCnt;  // 각 단지에 속하는 집의 수
     static int[] dx = {0, 0, -1, 1};
     static int[] dy = {-1, 1, 0, 0};
 
@@ -27,7 +27,7 @@ public class _2667  {
         }
 
         ArrayList<Integer> arr = new ArrayList<>();
-        int complexCnt = 0;
+        int complexCnt = 0;  // 단지 개수
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
                 if (map[i][j] == 1) {
