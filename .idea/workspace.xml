@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1697 success">
-      <change afterPath="$PROJECT_DIR$/src/_240214/BFS/_13549.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="13549 processing">
+      <change afterPath="$PROJECT_DIR$/src/_240216/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_240228/브루트포스/_6064_카잉달력.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240214/BFS/_1697.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240214/BFS/_1697.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +60,11 @@
   "keyToString": {
     "Application.BFS.executor": "Run",
     "Application.DFS.executor": "Run",
+    "Application.Solution.executor": "Run",
     "Application._1107.executor": "Debug",
     "Application._11724.executor": "Run",
     "Application._1260.executor": "Run",
+    "Application._13549.executor": "Run",
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
     "Application._1697.executor": "Run",
@@ -70,6 +72,7 @@
     "Application._2178.executor": "Run",
     "Application._2667.executor": "Debug",
     "Application._3085.executor": "Run",
+    "Application._6064_카잉달력.executor": "Run",
     "Application._7562.executor": "Run",
     "Application._7576.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -140,23 +143,8 @@
       <workItem from="1706633793398" duration="625000" />
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
-      <workItem from="1707119493822" duration="90964000" />
-    </task>
-    <task id="LOCAL-00015" summary="9093 success">
-      <option name="closed" value="true" />
-      <created>1696690015703</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1696690015703</updated>
-    </task>
-    <task id="LOCAL-00016" summary="10828 no success">
-      <option name="closed" value="true" />
-      <created>1700312627607</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1700312627607</updated>
+      <workItem from="1707119493822" duration="94899000" />
+      <workItem from="1708933662974" duration="6305000" />
     </task>
     <task id="LOCAL-00017" summary="231124">
       <option name="closed" value="true" />
@@ -534,7 +522,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707846877781</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="1697 success">
+      <option name="closed" value="true" />
+      <created>1707849854148</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1707849854149</updated>
+    </task>
+    <task id="LOCAL-00065" summary="1697 success">
+      <option name="closed" value="true" />
+      <created>1707850736617</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1707850736617</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10872 success" />
     <MESSAGE value="1676 success" />
     <MESSAGE value="2004 success" />
     <MESSAGE value="9613 success" />
@@ -577,7 +580,8 @@
     <MESSAGE value="2178 success" />
     <MESSAGE value="7576 success" />
     <MESSAGE value="7562 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="7562 success" />
+    <MESSAGE value="1697 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="1697 success" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
