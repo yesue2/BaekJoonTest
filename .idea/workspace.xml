@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="13549 processing">
-      <change afterPath="$PROJECT_DIR$/src/_240216/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_240228/브루트포스/_6064_카잉달력.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="6064 success">
+      <change afterPath="$PROJECT_DIR$/src/_240229/_1520_내리막길.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +66,7 @@
     "Application._13549.executor": "Run",
     "Application._14500.executor": "Run",
     "Application._1476.executor": "Run",
+    "Application._1520_내리막길.executor": "Run",
     "Application._1697.executor": "Run",
     "Application._1707.executor": "Run",
     "Application._2178.executor": "Run",
@@ -144,15 +144,7 @@
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
       <workItem from="1707119493822" duration="94899000" />
-      <workItem from="1708933662974" duration="6305000" />
-    </task>
-    <task id="LOCAL-00017" summary="231124">
-      <option name="closed" value="true" />
-      <created>1700841383137</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1700841383137</updated>
+      <workItem from="1708933662974" duration="14772000" />
     </task>
     <task id="LOCAL-00018" summary="231124">
       <option name="closed" value="true" />
@@ -538,7 +530,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707850736617</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="6064 success">
+      <option name="closed" value="true" />
+      <created>1709100920535</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1709100920536</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +556,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1676 success" />
     <MESSAGE value="2004 success" />
     <MESSAGE value="9613 success" />
     <MESSAGE value="17087 success" />
@@ -581,7 +580,8 @@
     <MESSAGE value="7576 success" />
     <MESSAGE value="7562 success" />
     <MESSAGE value="1697 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1697 success" />
+    <MESSAGE value="6064 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="6064 success" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
