@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="6064 success">
-      <change afterPath="$PROJECT_DIR$/src/_240229/_1520_내리막길.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1520 process">
+      <change afterPath="$PROJECT_DIR$/src/_240302/브루트포스/_1748_수이어쓰기1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +71,7 @@
     "Application._1520_내리막길.executor": "Run",
     "Application._1697.executor": "Run",
     "Application._1707.executor": "Run",
+    "Application._1748_수이어쓰기1.executor": "Run",
     "Application._2178.executor": "Run",
     "Application._2667.executor": "Debug",
     "Application._3085.executor": "Run",
@@ -144,15 +147,7 @@
       <workItem from="1706634426979" duration="3310000" />
       <workItem from="1706771294894" duration="5631000" />
       <workItem from="1707119493822" duration="94899000" />
-      <workItem from="1708933662974" duration="14772000" />
-    </task>
-    <task id="LOCAL-00018" summary="231124">
-      <option name="closed" value="true" />
-      <created>1701183502524</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1701183502524</updated>
+      <workItem from="1708933662974" duration="18711000" />
     </task>
     <task id="LOCAL-00019" summary="10828 success">
       <option name="closed" value="true" />
@@ -538,7 +533,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709100920536</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="1520 process">
+      <option name="closed" value="true" />
+      <created>1709302990473</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1709302990473</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +559,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2004 success" />
     <MESSAGE value="9613 success" />
     <MESSAGE value="17087 success" />
     <MESSAGE value="1373 success" />
@@ -581,7 +583,8 @@
     <MESSAGE value="7562 success" />
     <MESSAGE value="1697 success" />
     <MESSAGE value="6064 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="6064 success" />
+    <MESSAGE value="1520 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="1520 process" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -105,3 +105,7 @@ Q.idea/sonarlint/securityhotspotstore/b/6/b69d9a68745d05afebedc02c69edc41c3d750b
 Q.idea/sonarlint/securityhotspotstore/f/8/f80b193bc85f6dcf7af950efba2fcc31b04ee9b2,8/f/8f09d3055650ad458c65bcb9e9af03785644098e
 �
 Q.idea/sonarlint/securityhotspotstore/3/d/3d786e47c26991448572c70da4cb6b5b9a0f6171,7/0/7008929a75e75b41fd8f55809542b1ad6eba99f6
+g
+7src/_240302/브루트포스/_1748_수이어쓰기1.java,8/5/85de5d0e23e2f6165a38b9121ad6f17e247452b1
+d
+4src/_240302/브루트포스/_10972_다음순열.java,3/d/3d0db5471ff6f411cb2266f96232474143a14a36
