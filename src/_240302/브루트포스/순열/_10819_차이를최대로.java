@@ -14,8 +14,8 @@ public class _10819_차이를최대로 {
         StringTokenizer st;
 
         int N = Integer.parseInt(br.readLine());
-        arr = new int[N];
-        res = new int[N];
+        arr = new int[N];  // 입력받을 배열
+        res = new int[N];  // 탐색하며 새로 생성할 배열
         visited = new boolean[N];
 
         st = new StringTokenizer(br.readLine());
