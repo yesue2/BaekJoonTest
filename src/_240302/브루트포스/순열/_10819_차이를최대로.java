@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 public class _10819_차이를최대로 {
     static int[] arr, res;
     static boolean[] visited;
+    static int sum, result;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
@@ -21,10 +22,28 @@ public class _10819_차이를최대로 {
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
-        check(0);
+        dfs(0);
+        System.out.println(result);
     }
 
-    static void check(int depth) {
+    static void dfs(int depth) {
+        if (depth == arr.length) {
+            sum = 0;
 
+            for (int i = 0; i < res.length - 1; i++) {
+                sum += Math.abs(res[i] - res[i+1]);
+            }
+            result = Math.max(result, sum);
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                res[depth] = arr[i];
+                dfs(depth+1);
+                visited[i] = false;
+            }
+        }
     }
 }
