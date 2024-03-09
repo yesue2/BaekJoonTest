@@ -37,8 +37,10 @@ public class _15661_링크와스타트 {
 
             for (int i = 0; i < N; i++) {
                 for (int j = i+1; j < N; j++) {
+                    // 두 팀원이 서로 다른 팀일 때 continue
                     if (visited[i] != visited[j])
                         continue;
+                    // 두 팀원이 서로 같은 팀일 때 능력치 계산
                     if (visited[i])
                         start += arr[i][j] + arr[j][i];
                     else
