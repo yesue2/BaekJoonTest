@@ -9,6 +9,8 @@ import java.util.StringTokenizer;
 public class _2529_부등호 {
     static char[] sign;
     static StringBuilder sb = new StringBuilder();
+    static long min = Long.MIN_VALUE;
+    static long max = Long.MAX_VALUE;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,6 +24,18 @@ public class _2529_부등호 {
             sign[i] = st.nextToken().charAt(0);
             System.out.println(sign[i]);
         }
+        max(0);
+    }
+
+    static void max(int num) {
+        if (num == sign.length) {
+
+        }
+
+    }
+
+    static void min() {
+
     }
 
 }
