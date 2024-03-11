@@ -46,7 +46,7 @@ public class _16947_서울지하철2호선 {
         for(int i = 1; i <= N; i++) System.out.print(result[i] + " ");
     }
 
-    public static int bfs(int node) {
+    static int bfs(int node) {
         Queue<Node> queue = new LinkedList<>();
         boolean[] visited = new boolean[N + 1];
         queue.add(new Node(node, 0));
@@ -67,7 +67,7 @@ public class _16947_서울지하철2호선 {
         return 0;
     }
 
-    public static boolean checkCycle(int prev, int node, int start) {
+    static boolean checkCycle(int prev, int node, int start) {
         isCycle[node] = true;
 
         for(int i = 0; i < map[node].size(); i++) {
@@ -82,7 +82,7 @@ public class _16947_서울지하철2호선 {
         return false;
     }
 
-    public static class Node {
+    static class Node {
         int v;
         int count;
 
