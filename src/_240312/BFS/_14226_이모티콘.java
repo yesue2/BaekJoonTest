@@ -15,6 +15,7 @@ public class _14226_이모티콘 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         S = Integer.parseInt(br.readLine());
         bfs(S);
+        System.out.println(result);
     }
 
     static void bfs(int start) {
@@ -27,7 +28,7 @@ public class _14226_이모티콘 {
             Node cur = queue.poll();
 
             if (cur.total == start) {
-                System.out.println(cur.time);
+                result = cur.time;
                 return;
             }
             queue.add(new Node(cur.total, cur.total, cur.time + 1));
