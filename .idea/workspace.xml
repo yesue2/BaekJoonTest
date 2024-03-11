@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="16947 success">
-      <change beforePath="$PROJECT_DIR$/src/_240312/BFS/_14226_이모티콘.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240312/BFS/_14226_이모티콘.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_240312/BFS/_1261_알고스팟.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240312/BFS/_14226_이모티콘.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240311/BFS/_14226_이모티콘.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +68,7 @@
     "Application._1107.executor": "Debug",
     "Application._11724.executor": "Run",
     "Application._1260.executor": "Run",
+    "Application._1261_알고스팟.executor": "Run",
     "Application._13549.executor": "Run",
     "Application._14226_이모티콘.executor": "Run",
     "Application._14500.executor": "Run",
@@ -176,15 +179,7 @@
       <workItem from="1706771294894" duration="5631000" />
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
-      <workItem from="1709715734473" duration="56775000" />
-    </task>
-    <task id="LOCAL-00034" summary="1929 processing">
-      <option name="closed" value="true" />
-      <created>1704945991129</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1704945991129</updated>
+      <workItem from="1709715734473" duration="57884000" />
     </task>
     <task id="LOCAL-00035" summary="1929 success">
       <option name="closed" value="true" />
@@ -570,7 +565,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710186004191</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="16947 success">
+      <option name="closed" value="true" />
+      <created>1710186052411</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1710186052411</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
