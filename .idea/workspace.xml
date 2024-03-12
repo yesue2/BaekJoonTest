@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="16947 success">
-      <change afterPath="$PROJECT_DIR$/src/_240312/BFS/_1261_알고스팟.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240312/BFS/_14226_이모티콘.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240311/BFS/_14226_이모티콘.java" afterDir="false" />
-    </list>
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1261 process" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,15 +175,7 @@
       <workItem from="1706771294894" duration="5631000" />
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
-      <workItem from="1709715734473" duration="57884000" />
-    </task>
-    <task id="LOCAL-00035" summary="1929 success">
-      <option name="closed" value="true" />
-      <created>1704951459367</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1704951459367</updated>
+      <workItem from="1709715734473" duration="58628000" />
     </task>
     <task id="LOCAL-00036" summary="6588 success">
       <option name="closed" value="true" />
@@ -573,7 +561,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710186052411</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="1261 process">
+      <option name="closed" value="true" />
+      <created>1710187283235</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1710187283235</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,7 +587,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1260 success" />
     <MESSAGE value="dfs modify" />
     <MESSAGE value="11724 success" />
     <MESSAGE value="1707 success" />
@@ -616,7 +611,8 @@
     <MESSAGE value="15661 process" />
     <MESSAGE value="." />
     <MESSAGE value="16947 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="16947 success" />
+    <MESSAGE value="1261 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="1261 process" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

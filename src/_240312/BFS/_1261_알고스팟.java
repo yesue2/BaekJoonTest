@@ -21,5 +21,6 @@ public class _1261_알고스팟 {
                 miro[i][j] = Integer.parseInt(str[j]);
             }
         }
+
     }
 }
