@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1261 process">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1991 process" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,15 +176,7 @@
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
-      <workItem from="1710354777071" duration="2632000" />
-    </task>
-    <task id="LOCAL-00040" summary="9613 success">
-      <option name="closed" value="true" />
-      <created>1705474761430</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1705474761430</updated>
+      <workItem from="1710354777071" duration="2954000" />
     </task>
     <task id="LOCAL-00041" summary="17087 success">
       <option name="closed" value="true" />
@@ -572,7 +562,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710600509571</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="1991 process">
+      <option name="closed" value="true" />
+      <created>1710685272584</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1710685272584</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -590,7 +588,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dfs modify" />
     <MESSAGE value="11724 success" />
     <MESSAGE value="1707 success" />
     <MESSAGE value="2667 processing" />
@@ -615,7 +612,8 @@
     <MESSAGE value="." />
     <MESSAGE value="16947 success" />
     <MESSAGE value="1261 process" />
-    <option name="LAST_COMMIT_MESSAGE" value="1261 process" />
+    <MESSAGE value="1991 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="1991 process" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
