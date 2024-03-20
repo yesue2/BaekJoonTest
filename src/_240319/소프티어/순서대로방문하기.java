@@ -3,9 +3,7 @@ package _240319.소프티어;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class 순서대로방문하기 {
     static int[][] graph;
@@ -14,6 +12,8 @@ public class 순서대로방문하기 {
     static int m;
     static int[] dx = {1, -1, 0, 0};
     static int[] dy = {0, 0, 1, -1};
+    static boolean[][] visited;
+    static List<int[]> mustVisit = new ArrayList<>();
     static int result;
 
     public static void main(String[] args) throws IOException {
@@ -23,64 +23,46 @@ public class 순서대로방문하기 {
         m = Integer.parseInt(st.nextToken());
         graph = new int[n][n];
         must = new int[m][2];
+        visited = new boolean[n][n];
+        result = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             st = new StringTokenizer(br.readLine());
-            for(int j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) {
                 graph[i][j] = Integer.parseInt(st.nextToken());
             }
         }
-        for(int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
-            for(int j = 0; j < 2; j++) {
-                must[i][j] =  Integer.parseInt(st.nextToken()) - 1;
-            }
+            int x = Integer.parseInt(st.nextToken()) - 1;
+            int y = Integer.parseInt(st.nextToken()) - 1;
+            mustVisit.add(new int[]{x, y});
         }
-        bfs(must[0][0], must[0][1]);
+        visited[mustVisit.get(0)[0]][mustVisit.get(0)[1]] = true;
+        dfs(mustVisit.get(0)[0], mustVisit.get(0)[1], 0);
         System.out.println(result);
     }
 
-    static void bfs(int sx, int sy) {
-        boolean[][] visited = new boolean[n][n];
-        boolean[] mVisited = new boolean[m];
-        boolean can = true;
-        Queue<int[]> queue = new LinkedList<>();
-        int nm = 1;
-        result = 0;
+    static void dfs(int x, int y, int nm) {
+        if (nm == m) {
+            result++;
+            return;
+        }
 
-        visited[sx][sy] = true;
-        mVisited[nm] = true;
-        queue.add(new int[]{sx, sy});
+        if (mustVisit.get(nm)[0] == x && mustVisit.get(nm)[1] == y) {
+            dfs(x, y, nm + 1);
+            return;
+        }
 
-        while(!queue.isEmpty()) {
-            int[] xy = queue.poll();
-            for(int i = 0; i < 4; i++) {
-                int nx = dx[i] + xy[0];
-                int ny = dy[i] + xy[1];
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
 
-                if (nx < n && ny < n && nx >= 0 && ny >= 0 && !visited[nx][ny] && graph[nx][ny] == 0) {
-                    for(int j = 0; j < m; j++) {
-                        if(must[j][0] == nx && must[j][1] == ny && !mVisited[j]) {
-                            can = false;
-                            break;
-                        }
-                    }
-                    if(!can) continue;
-                    queue.add(new int[]{nx, ny});
-                    visited[nx][ny] = true;
-
-                    if(must[m-1][0] == nx && must[m-1][1] == ny) {
-                        result++;
-                    }else if(must[nm][0] == nx && must[nm][1] == ny) {
-                        mVisited[nm] = false;
-                        nm++;
-                        mVisited[nm] = true;
-                    }
-                }
+            if (nx < n && ny < n && nx >= 0 && ny >= 0 && !visited[nx][ny] && graph[nx][ny] == 0) {
+                visited[nx][ny] = true;
+                dfs(nx, ny, nm);
+                visited[nx][ny] = false;
             }
         }
-    }
-    static class path {
-
     }
 }
