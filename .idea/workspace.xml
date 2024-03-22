@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="출퇴근길 success">
-      <change afterPath="$PROJECT_DIR$/src/_240322/소프티어/성적평가.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_240322/소프티어/염기서열커버.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="성적평가 process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240322/소프티어/성적평가.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240322/소프티어/성적평가.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,23 +184,7 @@
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
-      <workItem from="1710354777071" duration="59078000" />
-    </task>
-    <task id="LOCAL-00047" summary="1476 success">
-      <option name="closed" value="true" />
-      <created>1706693576716</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1706693576716</updated>
-    </task>
-    <task id="LOCAL-00048" summary="1107 success">
-      <option name="closed" value="true" />
-      <created>1706706642004</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1706706642004</updated>
+      <workItem from="1710354777071" duration="67160000" />
     </task>
     <task id="LOCAL-00049" summary="14500 processing">
       <option name="closed" value="true" />
@@ -579,7 +562,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711047459302</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="염기서열커버 process">
+      <option name="closed" value="true" />
+      <created>1711119350517</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1711119350517</updated>
+    </task>
+    <task id="LOCAL-00097" summary="성적평가 process">
+      <option name="closed" value="true" />
+      <created>1711119359757</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1711119359757</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,8 +596,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2178 success" />
-    <MESSAGE value="7576 success" />
     <MESSAGE value="7562 success" />
     <MESSAGE value="1697 success" />
     <MESSAGE value="6064 success" />
@@ -622,7 +619,9 @@
     <MESSAGE value="순서대로 방문하기 success" />
     <MESSAGE value="자동차 테스트 process" />
     <MESSAGE value="출퇴근길 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="출퇴근길 success" />
+    <MESSAGE value="염기서열커버 process" />
+    <MESSAGE value="성적평가 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="성적평가 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
