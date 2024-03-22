@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="자동차 테스트 process">
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="출퇴근길 success">
+      <change afterPath="$PROJECT_DIR$/src/_240322/소프티어/성적평가.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_240322/소프티어/염기서열커버.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240321/소프티어/출퇴근길.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240321/소프티어/출퇴근길.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,9 @@
     "Application._7562.executor": "Run",
     "Application._7576.executor": "Run",
     "Application._9095_123더하기.executor": "Run",
+    "Application.성적평가.executor": "Run",
     "Application.순서대로방문하기.executor": "Run",
+    "Application.염기서열커버.executor": "Run",
     "Application.자동차테스트.executor": "Run",
     "Application.출퇴근길.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -182,15 +185,7 @@
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
-      <workItem from="1710354777071" duration="33316000" />
-    </task>
-    <task id="LOCAL-00046" summary="3075 success">
-      <option name="closed" value="true" />
-      <created>1706686180155</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1706686180155</updated>
+      <workItem from="1710354777071" duration="59078000" />
     </task>
     <task id="LOCAL-00047" summary="1476 success">
       <option name="closed" value="true" />
@@ -576,7 +571,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711033043269</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="출퇴근길 success">
+      <option name="closed" value="true" />
+      <created>1711047459302</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1711047459302</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2667 success" />
     <MESSAGE value="2178 success" />
     <MESSAGE value="7576 success" />
     <MESSAGE value="7562 success" />
@@ -619,7 +621,8 @@
     <MESSAGE value="순서대로 방문하기 process" />
     <MESSAGE value="순서대로 방문하기 success" />
     <MESSAGE value="자동차 테스트 process" />
-    <option name="LAST_COMMIT_MESSAGE" value="자동차 테스트 process" />
+    <MESSAGE value="출퇴근길 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="출퇴근길 success" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
