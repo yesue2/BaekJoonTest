@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="성적평가 success">
-      <change afterPath="$PROJECT_DIR$/src/_240323/소프티어/업무처리.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="업무처리 process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,15 +183,7 @@
       <workItem from="1707119493822" duration="94899000" />
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
-      <workItem from="1710354777071" duration="69230000" />
-    </task>
-    <task id="LOCAL-00050" summary="14500 processing">
-      <option name="closed" value="true" />
-      <created>1707139917903</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1707139917903</updated>
+      <workItem from="1710354777071" duration="70530000" />
     </task>
     <task id="LOCAL-00051" summary="bfs study">
       <option name="closed" value="true" />
@@ -578,7 +569,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711134112603</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="업무처리 process">
+      <option name="closed" value="true" />
+      <created>1711374001493</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1711374001493</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -596,7 +595,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1697 success" />
     <MESSAGE value="6064 success" />
     <MESSAGE value="1520 process" />
     <MESSAGE value="1748 success" />
@@ -621,7 +619,8 @@
     <MESSAGE value="염기서열커버 process" />
     <MESSAGE value="성적평가 process" />
     <MESSAGE value="성적평가 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="성적평가 success" />
+    <MESSAGE value="업무처리 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="업무처리 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
