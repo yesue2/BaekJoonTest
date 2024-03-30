@@ -29,8 +29,10 @@ public class _2529_부등호 {
 
         perm(0);
 
+        System.out.println(result);
         Collections.sort(result);
-        StringBuilder sb = new StringBuilder(result.get(result.size()-1) + "\n" + result.get(0));
+        StringBuilder sb = new StringBuilder();
+        sb.append(result.get(result.size()-1)).append('\n').append(result.get(0));
         System.out.println(sb);
     }
     static void perm(int idx) {
@@ -38,19 +40,20 @@ public class _2529_부등호 {
             result.add(makeNum());
             return;
         }
-
         for (int i = 0; i < src.length; i++) {
-            if (checked[i])
+            if (idx > 0 && !check(idx, src[i])) {  // 부등호에 따른 순서 틀리면 continue
                 continue;
-            if (idx > 0 && !checkSign(idx, src[i]))
-                continue;
-            checked[i] = true;
-            tgt[idx] = src[i];
-            perm(idx+1);
-            checked[i] = false;
+            }
+            if (!checked[i]) {
+                checked[i] = true;
+                tgt[idx] = src[i];
+                perm(idx+1);
+                checked[i] = false;
+            }
         }
     }
-    static boolean checkSign(int idx, int num) {
+    static boolean check(int idx, int num) {  // 부등호 판별
+        // 숫자 순서가 맞으면 true, 틀리면 false
         if (A[idx-1] == '<')
             return tgt[idx-1] < num;
         else
@@ -58,9 +61,8 @@ public class _2529_부등호 {
     }
     static String makeNum() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < tgt.length; i++) {
+        for (int i = 0; i < tgt.length; i++)
             sb.append(tgt[i]);
-        }
         return sb.toString();
     }
 }
