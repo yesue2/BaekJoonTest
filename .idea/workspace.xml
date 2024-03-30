@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2529 success">
+      <change afterPath="$PROJECT_DIR$/src/_240330/브루트포스순열/_1339_단어수학.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240329/브루트포스순열/_2529_부등호.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240329/브루트포스순열/_2529_부등호.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,65 +55,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BFS.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DFS.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
-    &quot;Application._10819_차이를최대로.executor&quot;: &quot;Run&quot;,
-    &quot;Application._10972_다음순열.executor&quot;: &quot;Run&quot;,
-    &quot;Application._10973_이전순열.executor&quot;: &quot;Run&quot;,
-    &quot;Application._10974_모든순열.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1107.executor&quot;: &quot;Debug&quot;,
-    &quot;Application._11724.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1260.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1261_알고스팟.executor&quot;: &quot;Run&quot;,
-    &quot;Application._13549.executor&quot;: &quot;Run&quot;,
-    &quot;Application._14226_이모티콘.executor&quot;: &quot;Run&quot;,
-    &quot;Application._14500.executor&quot;: &quot;Run&quot;,
-    &quot;Application._14501_퇴사.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1476.executor&quot;: &quot;Run&quot;,
-    &quot;Application._14889_스타트와링크.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1520_내리막길.executor&quot;: &quot;Run&quot;,
-    &quot;Application._15661_링크와스타트.executor&quot;: &quot;Run&quot;,
-    &quot;Application._16947_서울지하철2호선.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1697.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1707.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1748_수이어쓰기1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._1991_트리순회.executor&quot;: &quot;Run&quot;,
-    &quot;Application._2178.executor&quot;: &quot;Run&quot;,
-    &quot;Application._2529_부등호.executor&quot;: &quot;Run&quot;,
-    &quot;Application._2667.executor&quot;: &quot;Debug&quot;,
-    &quot;Application._3085.executor&quot;: &quot;Run&quot;,
-    &quot;Application._6064_카잉달력.executor&quot;: &quot;Run&quot;,
-    &quot;Application._7562.executor&quot;: &quot;Run&quot;,
-    &quot;Application._7576.executor&quot;: &quot;Run&quot;,
-    &quot;Application._9095_123더하기.executor&quot;: &quot;Run&quot;,
-    &quot;Application.성적평가.executor&quot;: &quot;Run&quot;,
-    &quot;Application.순서대로방문하기.executor&quot;: &quot;Run&quot;,
-    &quot;Application.염기서열커버.executor&quot;: &quot;Run&quot;,
-    &quot;Application.자동차테스트.executor&quot;: &quot;Run&quot;,
-    &quot;Application.출퇴근길.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/project/BaekJoonTest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BFS.executor": "Run",
+    "Application.DFS.executor": "Run",
+    "Application.Solution.executor": "Run",
+    "Application._10819_차이를최대로.executor": "Run",
+    "Application._10972_다음순열.executor": "Run",
+    "Application._10973_이전순열.executor": "Run",
+    "Application._10974_모든순열.executor": "Run",
+    "Application._1107.executor": "Debug",
+    "Application._11724.executor": "Run",
+    "Application._1260.executor": "Run",
+    "Application._1261_알고스팟.executor": "Run",
+    "Application._1339_단어수학.executor": "Run",
+    "Application._13549.executor": "Run",
+    "Application._14226_이모티콘.executor": "Run",
+    "Application._14500.executor": "Run",
+    "Application._14501_퇴사.executor": "Run",
+    "Application._1476.executor": "Run",
+    "Application._14889_스타트와링크.executor": "Run",
+    "Application._1520_내리막길.executor": "Run",
+    "Application._15661_링크와스타트.executor": "Run",
+    "Application._16947_서울지하철2호선.executor": "Run",
+    "Application._1697.executor": "Run",
+    "Application._1707.executor": "Run",
+    "Application._1748_수이어쓰기1.executor": "Run",
+    "Application._1991_트리순회.executor": "Run",
+    "Application._2178.executor": "Run",
+    "Application._2529_부등호.executor": "Run",
+    "Application._2667.executor": "Debug",
+    "Application._3085.executor": "Run",
+    "Application._6064_카잉달력.executor": "Run",
+    "Application._7562.executor": "Run",
+    "Application._7576.executor": "Run",
+    "Application._9095_123더하기.executor": "Run",
+    "Application.성적평가.executor": "Run",
+    "Application.순서대로방문하기.executor": "Run",
+    "Application.염기서열커버.executor": "Run",
+    "Application.자동차테스트.executor": "Run",
+    "Application.출퇴근길.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/project/BaekJoonTest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="_240208.큐와_그래프" />
@@ -186,15 +187,7 @@
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
-      <workItem from="1711689649602" duration="14812000" />
-    </task>
-    <task id="LOCAL-00056" summary="1707 success">
-      <option name="closed" value="true" />
-      <created>1707394941444</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1707394941444</updated>
+      <workItem from="1711689649602" duration="25602000" />
     </task>
     <task id="LOCAL-00057" summary="2667 processing">
       <option name="closed" value="true" />
@@ -580,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711784636396</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="2529 success">
+      <option name="closed" value="true" />
+      <created>1711793190846</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1711793190846</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
