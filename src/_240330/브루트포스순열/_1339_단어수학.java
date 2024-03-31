@@ -39,6 +39,7 @@ public class _1339_단어수학 {
             }
         }
 
+
         int[] add = new int[str.length];
         for (int i = 0; i < str.length; i++) {
             String[] arr = str[i].split("");
