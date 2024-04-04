@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="14888 success">
-      <change afterPath="$PROJECT_DIR$/src/_240403/그리디/_11047_동전0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="11047" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,15 +185,7 @@
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
-      <workItem from="1711689649602" duration="55661000" />
-    </task>
-    <task id="LOCAL-00063" summary="7562 success">
-      <option name="closed" value="true" />
-      <created>1707846877781</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1707846877781</updated>
+      <workItem from="1711689649602" duration="56284000" />
     </task>
     <task id="LOCAL-00064" summary="1697 success">
       <option name="closed" value="true" />
@@ -582,7 +571,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712072871063</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="11047">
+      <option name="closed" value="true" />
+      <created>1712155437286</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1712155437286</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +597,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10819 success" />
     <MESSAGE value="9095 success" />
     <MESSAGE value="14501 success" />
     <MESSAGE value="14889 success" />
@@ -625,7 +621,8 @@
     <MESSAGE value="1339 success" />
     <MESSAGE value="14888 process" />
     <MESSAGE value="14888 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="14888 success" />
+    <MESSAGE value="11047" />
+    <option name="LAST_COMMIT_MESSAGE" value="11047" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

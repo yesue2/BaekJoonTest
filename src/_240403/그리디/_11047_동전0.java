@@ -18,5 +18,6 @@ public class _11047_동전0 {
         for (int i = 0; i < N; i++) {
             worth[i] = Integer.parseInt(br.readLine());
         }
+
     }
 }
