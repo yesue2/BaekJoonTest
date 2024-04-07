@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1080 process">
-      <change afterPath="$PROJECT_DIR$/src/_240406/SW역량/_23290_마법사상어와복제.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="23290 process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240406/SW역량/_23290_마법사상어와복제.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240406/SW역량/_23290_마법사상어와복제.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,15 +192,7 @@
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
-      <workItem from="1711689649602" duration="86059000" />
-    </task>
-    <task id="LOCAL-00069" summary="10872 success">
-      <option name="closed" value="true" />
-      <created>1709391778447</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1709391778447</updated>
+      <workItem from="1711689649602" duration="105156000" />
     </task>
     <task id="LOCAL-00070" summary="10973 success">
       <option name="closed" value="true" />
@@ -586,7 +578,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712333815161</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="23290 process">
+      <option name="closed" value="true" />
+      <created>1712394196799</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1712394196799</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -604,7 +604,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="15661 process" />
     <MESSAGE value="." />
     <MESSAGE value="16947 success" />
     <MESSAGE value="1261 process" />
@@ -629,7 +628,8 @@
     <MESSAGE value="1931 success" />
     <MESSAGE value="11399 success" />
     <MESSAGE value="1080 process" />
-    <option name="LAST_COMMIT_MESSAGE" value="1080 process" />
+    <MESSAGE value="23290 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="23290 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
