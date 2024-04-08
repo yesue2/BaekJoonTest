@@ -8,10 +8,11 @@ import java.util.StringTokenizer;
 public class _23288_주사위굴리기2 {
     static int N, M, K, cx, cy, d, B, C, score, result, tcx, tcy;
     static int[][] map;
-    static int[] dx = {0, 1, 0, -1};
-    static int[] dy = {1, 0, -1, 0};
+    static int[] dx = {0, 1, 0, -1};  // 동, 남, 서, 북
+    static int[] dy = {1, 0, -1, 0};  // 동, 남, 서, 북
     static boolean[][] visited;
     static int[][] dice;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -19,6 +20,7 @@ public class _23288_주사위굴리기2 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         K = Integer.parseInt(st.nextToken());
+
         cx = 0;  // 현재 x좌표
         cy = 0;  // 현재 y좌표
         d = 0;  // 방향(시작은 0(동쪽)방향으로)
@@ -26,7 +28,6 @@ public class _23288_주사위굴리기2 {
         tcy = 0;  // 임시 현재 y좌표
         result = 0;
         map = new int[N][M];
-        visited = new boolean[N][M];
         dice = new int[4][3];
 
         for (int i = 0; i < N; i++) {
@@ -44,25 +45,31 @@ public class _23288_주사위굴리기2 {
         dice[3][1] = 6;
 
         for (int i = 0; i < K; i++) {
-            int ii = i+1;
+            int ii = i + 1;
             System.out.println("----------i :" + ii);
             move();
         }
         System.out.println(result);
     }
+
     static void move() {
         curLocation();  // 주사위 이동(cx, cy 설정)
 
         setScore(cx, cy);  // C 구해 점수 계산
         result += score;
+        System.out.println("result : " + result);
 
         setDirection();  // 다음 방향 세팅
     }
-    static void curLocation() {
-        tcx += dx[d];
-        tcy += dy[d];
 
-        if (tcx >= M || tcy >= N || tcx < 0 || tcy < 0) {  // 길이 없으면 반대방향으로
+    static void curLocation() {
+        tcx = dx[d] + cx;
+        tcy = dy[d] + cy;
+
+        System.out.println("before d : " + d);
+        System.out.println("before tcx : " + tcx);
+        System.out.println("before tcy : " + tcy);
+        if (tcx >= N || tcy >= M || tcx < 0 || tcy < 0) {  // 길이 없으면 반대방향으로
             switch (d) {
                 case 0:
                     d = 2;
@@ -85,24 +92,29 @@ public class _23288_주사위굴리기2 {
         System.out.println("cx : " + cx);
         System.out.println("cy : " + cy);
     }
-    static void setScore(int cx, int cy) {
-        B = map[cx][cy];
-        C = 1;
 
+    static void setScore(int cx, int cy) {
+        visited = new boolean[N][M];
+        B = map[cx][cy];
+        C = 0;
         dfs(cx, cy);  // C 개수를 세기 위해 현재 위치 주변에서 갈 수 있는 칸 탐색
+        if (C == 0)
+            C = 1;
         System.out.println("C : " + C);
         score = C * B;
         System.out.println("score : " + score);
     }
+
     static void dfs(int cx, int cy) {
         for (int i = 0; i < 4; i++) {
             int nx = dx[i] + cx;
             int ny = dy[i] + cy;
-            if (nx < M && ny < N && nx > 0 && ny > 0 && map[nx][ny] == map[cx][cy] && !visited[nx][ny]) {
+            if (nx < N && ny < M && nx >= 0 && ny >= 0 && map[nx][ny] == B && !visited[nx][ny]) {
                 visited[nx][ny] = true;
                 C++;
+                System.out.println("nx : " + nx);
+                System.out.println("ny : " + ny);
                 dfs(nx, ny);
-                visited[nx][ny] = false;
             }
         }
     }
@@ -114,7 +126,7 @@ public class _23288_주사위굴리기2 {
         int A = dice[3][1];
         if (A > B) {
             if (d == 3)
-                d = 1;
+                d = 0;
             else
                 d += 1;
         } else if (A < B) {
