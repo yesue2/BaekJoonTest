@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="23288 process">
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="23288 success">
+      <change afterPath="$PROJECT_DIR$/src/_240409/SW역량/왕실의기사대결.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240408/SW역량/_23288_주사위굴리기2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240408/SW역량/_23288_주사위굴리기2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +100,7 @@
     "Application.성적평가.executor": "Run",
     "Application.순서대로방문하기.executor": "Run",
     "Application.염기서열커버.executor": "Run",
+    "Application.왕실의기사대결.executor": "Run",
     "Application.자동차테스트.executor": "Run",
     "Application.출퇴근길.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -194,15 +195,7 @@
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
-      <workItem from="1711689649602" duration="150495000" />
-    </task>
-    <task id="LOCAL-00073" summary="10819 success">
-      <option name="closed" value="true" />
-      <created>1709730851005</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1709730851005</updated>
+      <workItem from="1711689649602" duration="178206000" />
     </task>
     <task id="LOCAL-00074" summary="9095 success">
       <option name="closed" value="true" />
@@ -588,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712587956983</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="23288 success">
+      <option name="closed" value="true" />
+      <created>1712596043107</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1712596043107</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +607,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1261 process" />
     <MESSAGE value="순서대로 방문하기 process" />
     <MESSAGE value="순서대로 방문하기 success" />
     <MESSAGE value="자동차 테스트 process" />
@@ -631,7 +631,8 @@
     <MESSAGE value="23290 process" />
     <MESSAGE value="14890 success" />
     <MESSAGE value="23288 process" />
-    <option name="LAST_COMMIT_MESSAGE" value="23288 process" />
+    <MESSAGE value="23288 success" />
+    <option name="LAST_COMMIT_MESSAGE" value="23288 success" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
