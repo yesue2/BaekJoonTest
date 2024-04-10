@@ -4,13 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class 왕실의기사대결 {
-    static int L, N, Q, n, result, d;
+    static int L, N, Q, n, result, d, isExist;
     static int[][] map;
     static int[][] knightLocation;
     static int[] knightPower;
     static int[] knightPowerR;
-    static int[] command;
-    static int[] moveCommand;
+    static HashMap<Integer, Integer> command;
+    static Queue<Integer> queue;
     static int[] dx = {-1, 0, 1, 0};
     static int[] dy = {0, 1, 0, -1};
     static boolean[][] visited;
@@ -26,8 +26,8 @@ public class 왕실의기사대결 {
         knightLocation = new int[L][L];  // 기사들이 위치한 지도 세팅
         knightPower = new int[N + 1];  // 각 기사의 체력 저장
         knightPowerR = new int[N + 1];  // 각 기사의 체력 복사(원본)
-        command = new int[Q];  // 명령 순서 저장
-        moveCommand = new int[Q + 1];  // 명령 저장
+        command = new HashMap<>();  // 명령 순서와 기사 번호 저장
+        queue = new LinkedList<>();  // 방향 저장
 
         for (int i = 0; i < L; i++) {  // <= 40
             st = new StringTokenizer(br.readLine());
@@ -57,9 +57,10 @@ public class 왕실의기사대결 {
         for (int i = 0; i < Q; i++) {  // 명령 저장, <= 100
             st = new StringTokenizer(br.readLine());
             int knightNum = Integer.parseInt(st.nextToken());
-            command[i] = knightNum;
-            moveCommand[knightNum] = Integer.parseInt(st.nextToken());
-            System.out.println("command의 순서 : " + i + ", 기사 순번 : " + knightNum);
+            int d = Integer.parseInt(st.nextToken());
+            command.put(i, knightNum);
+            queue.add(d);
+            System.out.println((i+1) + "번째 명령 : " + command.get(i));
         }
         for (int i = 0; i < Q; i++) {  // <= 100
             int ii = i + 1;
@@ -70,11 +71,10 @@ public class 왕실의기사대결 {
     }
 
     static void battle(int i) {
-        int knightNum = command[i];
-        d = moveCommand[knightNum];
+        int knightNum = command.get(i);  // 명령 순서에 해당하는 기사 번호 가져오기
+        d = queue.poll();
         System.out.println("움직일 방향 : " + d);
         knightMove(knightNum);
-
         setResult();
     }
 
@@ -86,7 +86,13 @@ public class 왕실의기사대결 {
         int trueCnt = 0;
 
         n = knightNum * 10;
-        knightSearch(knightNum);
+        System.out.println("움직일 기사 : " +  knightNum);
+        knightSearch();
+
+        if (isExist == 0) {
+            System.out.println("존재하지 않는 기사라서 다음 명령 넘어감");
+            return;
+        }
 
         for (int l = 0; l < L; l++) {
             for (int m = 0; m < L; m++) {
@@ -101,38 +107,65 @@ public class 왕실의기사대결 {
             System.out.println(yList.get(j));
             int nx = dx[d] + xList.get(j);
             int ny = dy[d] + yList.get(j);
-            System.out.print("next : " + nx + " ");
-            System.out.println(ny);
+            System.out.println("next : " + nx + " " + ny);
 
             if (nx >= 0 && ny >= 0 && nx < L && ny < L) {
-                if (map[nx][ny] == 2) return;  // 기사가 옮겨질 칸에 벽이 있을 때 옮기기 종료
+                if (map[nx][ny] == 2) {
+                    System.out.println("벽에 막혀 이동불가");
+                    return;  // 기사가 옮겨질 칸에 벽이 있을 때 옮기기 종료
+                }
+                nxList.add(nx);
+                nyList.add(ny);
+                n = knightNum * 10;
                 if (knightLocation[nx][ny] != n && knightLocation[nx][ny] != 0) {  // 기사가 옮겨질 칸에 다른 기사가 있을 때
-                    nxList.add(nx);
-                    nyList.add(ny);
                     int pushOutKnight = knightLocation[nx][ny] / 10;
                     System.out.println("밀려날 기사 : " + pushOutKnight);
                     n = pushOutKnight * 10;
                     if (knightPushOut(pushOutKnight)) {
                         trueCnt++;
+                    } else {
+                        trueCnt = 0;
                     }
-                } else if (map[nx][ny] == 1)   // 밀려난 칸에 함정이 있을 때
-                    knightPower[knightNum]--;
+                } else trueCnt++;
+            } else {
+                trueCnt = 0;
+                break;
             }
         }
-        if (trueCnt != 0) {  // 밀려나는 기사도 벽에 막히지 않으면 옮겨야 할 기사의 좌표 옮기기
+        System.out.println("trueCnt : " + trueCnt);
+        if (trueCnt != 0 && trueCnt == nxList.size()) {  // 밀려나는 기사도 벽에 막히지 않으면 옮겨야 할 기사의 좌표 옮기기
+            System.out.println("현재 움직인 기사 : " + knightNum);
             for (int i = 0; i < xList.size(); i++) {
+                if (xList.size() >= 2) {
+                    if (nxList.get(0).equals(xList.get(1)) && nyList.get(0).equals(yList.get(1))) {  // 이동 방향과 같은 방향으로 같은 기사가 존재할 때
+                        knightLocation[xList.get(0)][yList.get(0)] = 0;
+                        knightLocation[nxList.get(nxList.size() - 1)][nyList.get(nxList.size() - 1)] = knightNum * 10;
+                        System.out.println("움직일 첫 번째 xList, yList : " + xList.getFirst() + " " + yList.getFirst());
+                        System.out.println("움직인 마지막 nxList, nyList : " + nxList.getLast() + " " + nyList.getLast());
+                        break;
+                    }
+                }
                 knightLocation[xList.get(i)][yList.get(i)] = 0;
                 knightLocation[nxList.get(i)][nyList.get(i)] = knightNum * 10;
+                System.out.println("움직일 xList, yList : " + xList.get(i) + " " + yList.get(i));
+                System.out.println("움직인 nxList, nyList : " + nxList.get(i) + " " + nyList.get(i));
+
             }
-        }
+        } else
+            System.out.println("벽에 막히거나 체스판 넘어서 이동불가");
     }
 
-    static void knightSearch(int knightNum) {  // 현재 옮겨야 할 기사의 칸 탐색
+    static void knightSearch() {  // 현재 옮겨야 할 기사의 칸 탐색
+        isExist = 0;
         for (int j = 0; j < L; j++) {
             for (int k = 0; k < L; k++) {
-                if (knightLocation[j][k] == knightNum * 10) {
+                if (knightLocation[j][k] == n) {
+                    isExist++;
                     visited = new boolean[L][L];
                     dfs(j, k);
+                    System.out.println("j, k : " + j + " " + k);
+                    if (!visited[j][k])  // 기사가 한 칸인 경우 자기자신 방문 표시
+                        visited[j][k] = true;
                     return;
                 }
             }
@@ -157,7 +190,7 @@ public class 왕실의기사대결 {
         List<Integer> nyList = new ArrayList<>();
         int trueCnt = 0;
 
-        knightSearch(knightNum);
+        knightSearch();
 
         for (int l = 0; l < L; l++) {
             for (int m = 0; m < L; m++) {
@@ -177,31 +210,61 @@ public class 왕실의기사대결 {
 
             if (nx >= 0 && ny >= 0 && nx < L && ny < L) {
                 if (map[nx][ny] == 2) return false;  // 기사가 밀려날 칸에 벽이 있을 때 옮기기 종료
+                nxList.add(nx);
+                nyList.add(ny);
                 if (knightLocation[nx][ny] != n && knightLocation[nx][ny] != 0) {  // 기사가 밀려날 칸에 다른 기사가 있을 때
                     int pushOutKnight = knightLocation[nx][ny] / 10;
-                    nxList.add(nx);
-                    nyList.add(ny);
                     n = pushOutKnight * 10;
-                    if (knightPushOut(pushOutKnight)) {
+                    if (knightPushOut(pushOutKnight))
                         trueCnt++;
+                    else {
+                        trueCnt = 0;
+                        nyList.clear();
+                        nxList.clear();
                     }
-                }
+                } else
+                    trueCnt++;
+            } else {
+                System.out.println("체스판을 벗어나서 못 밀림");
+                nyList.clear();
+                nxList.clear();
+                return false;  // 체스판을 벗어나서 밀렸을 때 밀리지 않고 종료
             }
         }
-        if (trueCnt != 0) {  // 밀려나는 기사도 벽에 막히지 않으면 옮겨야 할 기사의 좌표 옮기기
+        if (trueCnt != 0 && trueCnt == nxList.size()) {  // 밀려나는 기사도 벽에 막히지 않으면 옮겨야 할 기사의 좌표 옮기기
             for (int i = 0; i < xList.size(); i++) {
+                if (xList.size() >= 2) {
+                    if (nxList.get(0).equals(xList.get(1)) && nyList.get(0).equals(yList.get(1))) {  // 이동 방향과 같은 방향으로 같은 기사가 존재할 때
+                        knightLocation[xList.get(0)][yList.get(0)] = 0;
+                        knightLocation[nxList.get(nxList.size() - 1)][nyList.get(nxList.size() - 1)] = knightNum * 10;
+                        System.out.println("밀려난 첫 번째 xList, yList : " + xList.getFirst() + " " + yList.getFirst());
+                        System.out.println("밀려난 마지막 nxList, nyList : " + nxList.getLast() + " " + nyList.getLast());
+                        break;
+                    }
+                }
                 knightLocation[xList.get(i)][yList.get(i)] = 0;
                 knightLocation[nxList.get(i)][nyList.get(i)] = knightNum * 10;
+                System.out.println("밀려난 xList, yList : " + xList.get(i) + " " + yList.get(i));
+                System.out.println("밀려난 nxList, nyList : " + nxList.get(i) + " " + nyList.get(i));
+            }
+            for (int i = 0; i < xList.size(); i++) {
                 if (map[nxList.get(i)][nyList.get(i)] == 1)   // 밀려난 칸에 함정이 있을 때
                     knightPower[knightNum]--;
             }
         }
         System.out.println("밀려난 기사의 체력 : " + knightPower[knightNum]);
         if (knightPower[knightNum] <= 0) {  // 함정에 의해 k가 0이하로 떨어지면 삭제
-            for (int j = 0; j < xList.size(); j++) {
-                int cx = xList.get(j);
-                int cy = yList.get(j);
+            System.out.println("삭제된 기사 : " + knightNum);
+            for (int j = 0; j < nxList.size(); j++) {
+                int cx = nxList.get(j);
+                int cy = nyList.get(j);
                 knightLocation[cx][cy] = 0;
+            }
+            for (int i = 0; i < L; i++) {
+                for (int j = 0; j < L; j++) {
+                    System.out.print(knightLocation[i][j] + " ");
+                }
+                System.out.println();
             }
         }
         return true;
@@ -214,13 +277,15 @@ public class 왕실의기사대결 {
         for (int i = 0; i < L; i++) {
             for (int j = 0; j < L; j++) {
                 if (knightLocation[i][j] != 0 && !exist.contains(knightLocation[i][j] / 10)) {
-                    exist.add(knightLocation[i][j] / 10);
+                    exist.add(knightLocation[i][j] / 10);  // 마지막까지 체스판에 존재하는 기사 번호 추출
+                    System.out.println("존재하는 기사 : " + knightLocation[i][j] / 10);
                 }
             }
         }
         for (int i = 0; i < exist.size(); i++) {
             int knightNum = exist.get(i);
             result = result + (knightPowerR[knightNum] - knightPower[knightNum]);
+            System.out.println(result);
         }
     }
 }
