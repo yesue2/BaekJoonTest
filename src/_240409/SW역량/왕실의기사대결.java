@@ -64,7 +64,6 @@ public class 왕실의기사대결 {
             int d = Integer.parseInt(st.nextToken());
             command.put(i, knightNum);
             queue.add(d);
-            System.out.println((i + 1) + "번째 명령 : " + command.get(i));
         }
         for (int i = 0; i < Q; i++) {  // <= 100
             int ii = i + 1;

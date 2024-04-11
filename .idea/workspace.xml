@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="왕실의 기사 대결">
-      <change afterPath="$PROJECT_DIR$/src/_240410/SW역량/왕실의기사대결.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_240409/SW역량/왕실의기사대결.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240409/SW역량/왕실의기사대결.java" afterDir="false" />
     </list>
@@ -196,15 +195,7 @@
       <workItem from="1708933662974" duration="35418000" />
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
-      <workItem from="1711689649602" duration="235212000" />
-    </task>
-    <task id="LOCAL-00078" summary="15661 success">
-      <option name="closed" value="true" />
-      <created>1709883035855</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1709883035855</updated>
+      <workItem from="1711689649602" duration="236698000" />
     </task>
     <task id="LOCAL-00079" summary="15661 process">
       <option name="closed" value="true" />
@@ -590,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712735845570</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="왕실의 기사 대결">
+      <option name="closed" value="true" />
+      <created>1712784038108</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1712784038108</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
