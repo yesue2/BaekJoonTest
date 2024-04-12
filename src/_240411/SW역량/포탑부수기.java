@@ -166,27 +166,10 @@ public class 포탑부수기 {
             int nx = dx[i] + cx;
             int ny = dy[i] + cy;
             System.out.println("바뀌기 전 : " + nx + " " + ny);
-            if (nx < 0) {
-                if (map[nx + N][ny] > 0) {  // 바꿔서 갈 수 있을 때
-                    nx += N;
-                    System.out.println("바뀌기 후 : " + nx + " " + ny);
-                } else continue;  // 바꿔도 부셔져 있을 때
-            } else if (ny < 0) {
-                if (map[nx][ny + M] > 0) {
-                    ny += M;
-                    System.out.println("바뀌기 후 : " + nx + " " + ny);
-                } else continue;
-            } else if (nx >= N) {
-                if (map[nx - N][ny] > 0) {
-                    nx -= N;
-                    System.out.println("바뀌기 후 : " + nx + " " + ny);
-                } else continue;
-            } else if (ny >= M) {
-                if (map[nx][ny - M] > 0) {
-                    ny -= M;
-                    System.out.println("바뀌기 후 : " + nx + " " + ny);
-                } else continue;
-            }
+            if (nx < 0) nx += N;
+            else if (nx >= N) nx -= N;
+            if (ny < 0) ny += M;
+            else if (ny >= M) ny -= M;
             if (!visited[nx][ny] && map[nx][ny] > 0) {
                 visited[nx][ny] = true;
                 path.add(i);
