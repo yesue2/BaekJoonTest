@@ -21,6 +21,7 @@ public class 메이즈러너 {
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
     static boolean[][] visited;
+    static List<Integer> des;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -75,7 +76,7 @@ public class 메이즈러너 {
         result = 0;
         visited = new boolean[N][N];
         move();  // 참가자 이동
-        System.out.println("result : " +  result);
+        System.out.println("result : " + result);
 
         rotation();  // 미로 회전
     }
@@ -100,31 +101,98 @@ public class 메이즈러너 {
                 for (int j = 0; j < d.size(); j++) {   // 최단거리 상하로 움직이는 것부터 선택
                     if (d.get(j) == 0) {
                         setMove(participant, 0);
-                        result++;
                         break;
                     } else if (d.get(j) == 1) {
                         setMove(participant, 1);
-                        result++;
                         break;
-                    }  // 좌우만 있을 땐 어떻게 해야되나
+                    } else {  // 좌우만 있을 땐 어떻게 해야되나
+                        setMove(participant, d.get(j));
+                        break;
+                    }
                 }
             } else if (d.size() == 1) {  // 최단거리가 하나일 때
                 setMove(participant, d.get(0));
-                result++;
             }
         }
     }
+
     static void setMove(Participant participant, int i) {
+        runner[participant.x][participant.y].remove(participant);
         participant.x += dx[i];
         participant.y += dx[i];
-        runner[participant.x][participant.y].remove(participant);
         if (runner[participant.x][participant.y] == null)
             runner[participant.x][participant.y] = new ArrayList<>();
         runner[participant.x][participant.y].add(participant);
+        result++;
         System.out.println("움직인 방향 : " + i);
     }
 
     static void rotation() {
+        des = new ArrayList<>();  // 각 참가자 별 최단거리 저장
+        chooseClose();
+    }
 
+    static void chooseClose() {
+        for (int i = 1; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+
+            }
+        }
+        int[] dx = {-1, -1, 1, 1};
+        int[] dy = {-1, 1, 1, -1};
+        int num = 0;
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 0; j < 4; j++) {
+                int nx = exit[0] - dx[0] * i;
+                int ny = exit[1] - dy[0] * i;
+                if (nx < 0 && ny < 0) {
+                    nx = exit[0] - ;
+                    num++;
+                    continue;
+                }
+                if (nx < 0 && ny >= N) {
+                    num++;
+                    continue;
+                } else if (nx >= N && ny < 0) {
+                    num++;
+                    continue;
+                } else if (nx >= N && ny >= N) {
+                    continue;
+                }
+                switch (num) {
+                    case 0:
+                        if (checkParticipant(i, nx, ny))
+                            break;
+                        break;
+                    case 1:
+
+
+
+                }
+            }
+        }
+
+        for (int i = 0; i < pList.size(); i++) {
+            Participant participant = pList.get(i);
+            int cx = participant.x;
+            int cy = participant.y;
+
+            des.add(Math.abs(cx - exit[0]) + Math.abs(cy - exit[1]));
+        }
+        int max = 0;
+        for (int i = 0; i < des.size(); i++) {
+            if (des.get(i) > max)
+        }
+    }
+
+    static boolean checkParticipant (int i, int nx, int ny) {
+        for (int k = 0; k < i + 1; k++) {
+            for (int l = 0; l < i + 1; l++) {
+                if (!runner[nx+k][ny+l].isEmpty()) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
