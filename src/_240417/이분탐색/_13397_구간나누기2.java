@@ -6,10 +6,8 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class _13397_구간나누기2 {
-    static int N, M, result, difference;
+    static int N, M, result;
     static int[] arr;
-    static int[] right;
-    static int[] left;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,58 +16,43 @@ public class _13397_구간나누기2 {
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
         arr = new int[N];
-        right = new int[N / 2];
-        left = new int[N / 2 + 1];
-        result = Integer.MAX_VALUE;
+        int left = 0;
+        int right = 0;
 
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
+            right = Math.max(right, arr[i]);  // 배열의 최댓값을 right에 입력
         }
-        setArr(arr, left, right);
+        result = right;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (isValid(arr, mid)) {   // mid로 M개 이하의 구간으로 나눌 수 있는지 판단
+                result = Math.min(result, mid);
+                right = mid - 1;   // right를 조정해 더 작은 값으로 탐색 진행
+            } else {  // 나눈 구간이 M개 초과일 때
+                left = mid + 1;  // left를 조정해 더 큰 값으로 탐색 진행
+            }
+        }
+        System.out.println(result);
     }
 
-    static void setArr(int[] arr, int[] left, int[] right) {
-        int mid;
-        int cnt = 0;
-        if (cnt == M) {
-            result = Math.min(result, difference);
-            return;
-        }
+    static boolean isValid(int[] arr, int mid) {
+        int cnt = 1;
+        int min = arr[0];
+        int max = arr[0];
 
-        if (arr.length % 2 == 1) {
-            int max = Integer.MIN_VALUE;
-            int min = Integer.MAX_VALUE;
-            mid = arr.length / 2 + 1;
-            for (int i = 0; i < mid; i++) {
-                left[i] = arr[i];
-                if (max < arr[i]) {
-                    max = arr[i];
-                }
-                if (min > arr[i]) {
-                    min = arr[i];
-                }
+        for (int i = 0; i < N; i++) {
+            if (arr[i] < min)
+                min = arr[i];
+            if (arr[i] > max)
+                max = arr[i];
+            if (max - min > mid) {   // (최댓값 - 최솟값) <= 중간값 이 되는 지점에서 구간을 나눔
+                cnt++;
+                min = arr[i];
+                max = arr[i];
             }
-            for (int i = mid; i < arr.length; i++) {
-                right[i - mid] = arr[i];
-                if (max < arr[i]) {
-                    max = arr[i];
-                }
-                if (min > arr[i]) {
-                    min = arr[i];
-                }
-            }
-            cnt += 2;
-        } else {
-            mid = arr.length / 2;
-            for (int i = 0; i < mid; i++) {
-                left[i] = arr[i];
-            }
-            for (int i = mid; i < arr.length; i++) {
-                right[mid] = arr[i];
-            }
-            cnt += 2;
         }
+        return cnt <= M;
     }
-
 }
