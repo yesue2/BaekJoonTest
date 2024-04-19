@@ -1,4 +1,4 @@
-package _240417.이분탐색;
+package _240418.이분탐색;
 
 import java.io.*;
 import java.util.*;
@@ -42,28 +42,28 @@ public class _1981_배열에서이동 {
     }
 
     static void setMin() {
-        int start = 0;  // 나올 수 있는 차이값의 최소
-        int end = max - min;  // 나올 수 있는 차이값의 최대
+        int left = 0;  // 나올 수 있는 차이값의 최소
+        int right = max - min;  // 나올 수 있는 차이값의 최대
 
         // 나올 수 있는 차이값을 기준으로 이분탐색 진행
-        while (start <= end) {
-            int mid = (start + end) / 2;
+        while (left <= right) {
+            int mid = (left + right) / 2;
             boolean check = false;
             for (int i = min; i + mid <= max; i++) {
-                int s = i;
-                int e = i + mid;
-                if(arr[0][0] >= s && arr[0][0] <= e) {
-                    if (bfs(s, e)) {   // mid보다 크기가 작은 칸으로만 가서 n,n칸까지 도달했을 경우
+                int start = i;
+                int end = i + mid;
+                if(arr[0][0] >= start && arr[0][0] <= end) {
+                    if (bfs(start, end)) {   // mid보다 크기가 작은 칸으로만 가서 n,n칸까지 도달했을 경우
                         check = true;
                         break;
                     }
                 }
             }
             if (check) {   // 도달 성공했을 경우
-                end = mid - 1;
+                right = mid - 1;
                 result = Math.min(result, mid);
             } else   // 도달 실패했을 경우
-                start = mid + 1;
+                left = mid + 1;
         }
     }
 
