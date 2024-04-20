@@ -47,6 +47,7 @@ public class _1561_놀이공원 {
         }
     }
 
+
     static long countStart(long t) {
         long cnt = M;  // 모든 놀이기구가 한 번씩은 시작
         for (int i = 0; i < M; i++) {
