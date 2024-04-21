@@ -67,6 +67,7 @@ public class _1561_놀이공원 {
                 cnt++;
                 if (cnt == N) {
                     result = i + 1;
+                    break;
                 }
             }
         }

@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1561 success">
+      <change afterPath="$PROJECT_DIR$/src/_240421/브루트포스/_15683_감시.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240419/이분탐색/_1561_놀이공원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240419/이분탐색/_1561_놀이공원.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,15 +185,7 @@
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
       <workItem from="1711689649602" duration="246684000" />
-      <workItem from="1712829350642" duration="175503000" />
-    </task>
-    <task id="LOCAL-00094" summary="자동차 테스트 process">
-      <option name="closed" value="true" />
-      <created>1711033043268</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1711033043269</updated>
+      <workItem from="1712829350642" duration="183600000" />
     </task>
     <task id="LOCAL-00095" summary="출퇴근길 success">
       <option name="closed" value="true" />
@@ -577,7 +571,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713547646675</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="1561 success">
+      <option name="closed" value="true" />
+      <created>1713621336975</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1713621336975</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
