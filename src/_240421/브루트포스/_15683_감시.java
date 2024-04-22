@@ -27,6 +27,7 @@ public class _15683_감시 {
                 map[i][j] = Integer.parseInt(st.nextToken());
             }
         }
+        search();
     }
 
     static void search() {
@@ -41,6 +42,10 @@ public class _15683_감시 {
                             watch2(i, j);
                             break;
                         case 3:
+                            watch3(i, j);
+                            break;
+                        case 4:
+
 
 
                     }
@@ -51,51 +56,27 @@ public class _15683_감시 {
 
     static void watch1(int cx, int cy) {
         for (int i = 0; i < 4; i++) {
-            search1(i, cx, cy);
-        }
-    }
-
-    static void search1(int d, int cx, int cy) {
-        int nx = dx[d] + cx;
-        int ny = dy[d] + cy;
-
-        if (nx < 0 || ny < 0 || nx >= N || ny >= M || map[nx][ny] != 6) {
-            return;
-        } else {
-            visited[nx][ny] = true;
-            search1(d, nx, ny);
+            search(i, cx, cy);
         }
     }
 
     static void watch2(int cx, int cy) {
         for (int i = 0; i < 2; i++) {
             for (int j = i; j <= i + 2; j += 2) {
-                search2(j, cx, cy);
+                search(j, cx, cy);
             }
-        }
-    }
-
-    static void search2(int d, int cx, int cy) {
-        int nx = dx[d] + cx;
-        int ny = dy[d] + cy;
-
-        if (nx < 0 || ny < 0 || nx >= N || ny >= M || map[nx][ny] != 6) {
-            return;
-        } else {
-            visited[nx][ny] = true;
-            search1(d, nx, ny);
         }
     }
 
     static void watch3(int cx, int cy) {
-        for (int i = 0; i < 2; i++) {
-            for (int j = i; j <= i + 2; j += 2) {
-                search2(j, cx, cy);
+        for (int i = 0; i < 3; i++) {
+            for (int j = i; j <= i + 2; j++) {
+                search(j, cx, cy);
             }
         }
     }
 
-    static void search3(int d, int cx, int cy) {
+    static void search(int d, int cx, int cy) {
         int nx = dx[d] + cx;
         int ny = dy[d] + cy;
 
@@ -103,7 +84,7 @@ public class _15683_감시 {
             return;
         } else {
             visited[nx][ny] = true;
-            search1(d, nx, ny);
+            search(d, nx, ny);
         }
     }
 }

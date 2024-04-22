@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1561 success">
-      <change afterPath="$PROJECT_DIR$/src/_240421/브루트포스/_15683_감시.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="15683 process">
+      <change afterPath="$PROJECT_DIR$/src/_240421/브루트포스/_16956_늑대와양.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240419/이분탐색/_1561_놀이공원.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240419/이분탐색/_1561_놀이공원.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240421/브루트포스/_15683_감시.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240421/브루트포스/_15683_감시.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
     "Application._1561_놀이공원.executor": "Run",
     "Application._15661_링크와스타트.executor": "Run",
     "Application._16947_서울지하철2호선.executor": "Run",
+    "Application._16956_늑대와양.executor": "Run",
     "Application._1697.executor": "Run",
     "Application._1707.executor": "Run",
     "Application._1748_수이어쓰기1.executor": "Run",
@@ -185,15 +186,7 @@
       <workItem from="1709715734473" duration="59843000" />
       <workItem from="1710354777071" duration="77405000" />
       <workItem from="1711689649602" duration="246684000" />
-      <workItem from="1712829350642" duration="183600000" />
-    </task>
-    <task id="LOCAL-00095" summary="출퇴근길 success">
-      <option name="closed" value="true" />
-      <created>1711047459302</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1711047459302</updated>
+      <workItem from="1712829350642" duration="188796000" />
     </task>
     <task id="LOCAL-00096" summary="염기서열커버 process">
       <option name="closed" value="true" />
@@ -579,7 +572,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713621336975</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="15683 process">
+      <option name="closed" value="true" />
+      <created>1713709614071</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1713709614071</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -597,7 +598,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2529 process" />
     <MESSAGE value="2529 success" />
     <MESSAGE value="1339 process" />
     <MESSAGE value="1339 success" />
@@ -622,7 +622,8 @@
     <MESSAGE value="1981 success" />
     <MESSAGE value="1561" />
     <MESSAGE value="1561 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="1561 success" />
+    <MESSAGE value="15683 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="15683 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
