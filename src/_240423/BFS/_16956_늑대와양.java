@@ -1,4 +1,4 @@
-package _240421.브루트포스;
+package _240423.BFS;
 
 import java.io.*;
 import java.util.*;
