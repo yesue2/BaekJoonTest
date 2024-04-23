@@ -16,8 +16,6 @@ public class _1981_배열에서이동 {
     static int[][] arr;
     static int[] dx = {1, -1, 0, 0};
     static int[] dy = {0, 0, 1, -1};
-    static boolean[][] visited;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
