@@ -101,9 +101,8 @@ public class _9376_탈옥 {
                     }
                     if (nx == 0 || ny == 0 || nx == map.length-1 || ny == map[map.length-1].length-1) {
                         System.out.println("탈출 nx ny : " + nx + " " + ny);
-                        if (min > cnt) {
+                        if (min > cnt)
                             min = cnt;
-                        }
                         System.out.println("min : " + min);
                         return;
                     }
