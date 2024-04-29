@@ -1,8 +1,10 @@
 package _240429.BFS;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
 public class _1600_말이되고픈원숭이 {
-
         static int K, W, H;
         static int[][] map;
         static int min = Integer.MAX_VALUE;
@@ -12,42 +14,48 @@ public class _1600_말이되고픈원숭이 {
         static int[] dy = {1, 0, -1, 0};
         static boolean[][][] visited;
 
-        public static void main(String[] args) {
-            Scanner scan = new Scanner(System.in);
+        public static void main(String[] args) throws IOException {
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-            K = scan.nextInt();
-            W = scan.nextInt();
-            H = scan.nextInt();
+            K = Integer.parseInt(br.readLine());
+
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            W = Integer.parseInt(st.nextToken());
+            H = Integer.parseInt(st.nextToken());
 
             map = new int[H][W];
             for(int i = 0; i < H; i++) {
+                st = new StringTokenizer(br.readLine());
                 for(int j = 0; j < W; j++) {
-                    map[i][j] = scan.nextInt();
+                    map[i][j] = Integer.parseInt(st.nextToken());
                 }
             }
 
             visited = new boolean[H][W][K + 1];
-            min = bfs(0, 0);
+            min = bfs();
 
-            if(min == Integer.MAX_VALUE) System.out.println("-1");
-            else System.out.println(min);
+            if(min == Integer.MAX_VALUE)
+                System.out.println(-1);
+            else
+                System.out.println(min);
         }
 
-        public static int bfs(int x, int y) {
+        public static int bfs() {
             Queue<Node> queue = new LinkedList<>();
-            queue.offer(new Node(x, y, 0, K));
-            visited[x][y][K] = true;
+            queue.offer(new Node(0, 0, 0, K));
+            visited[0][0][K] = true;
 
             while(!queue.isEmpty()) {
                 Node cur = queue.poll();
-                if(cur.x == H - 1 && cur.y == W - 1) return cur.count;
+                if(cur.x == H - 1 && cur.y == W - 1)
+                    return cur.cnt;
 
                 for(int i = 0; i < 4; i++) {
                     int nx = cur.x + dx[i];
                     int ny = cur.y + dy[i];
                     if(nx >= 0 && ny >= 0 && nx < H && ny < W && !visited[nx][ny][cur.k] && map[nx][ny] == 0) {
                         visited[nx][ny][cur.k] = true;
-                        queue.offer(new Node(nx, ny, cur.count + 1, cur.k));
+                        queue.offer(new Node(nx, ny, cur.cnt + 1, cur.k));
                     }
                 }
 
@@ -57,7 +65,7 @@ public class _1600_말이되고픈원숭이 {
                         int ny = cur.y + hdy[i];
                         if(nx >= 0 && ny >= 0 && nx < H && ny < W && !visited[nx][ny][cur.k - 1] && map[nx][ny] == 0) {
                             visited[nx][ny][cur.k - 1] = true;
-                            queue.offer(new Node(nx, ny, cur.count + 1, cur.k - 1));
+                            queue.offer(new Node(nx, ny, cur.cnt + 1, cur.k - 1));
                         }
                     }
                 }
@@ -68,13 +76,13 @@ public class _1600_말이되고픈원숭이 {
         public static class Node {
             int x;
             int y;
-            int count;
+            int cnt;
             int k;
 
-            public Node(int x, int y, int count, int k) {
+            public Node(int x, int y, int cnt, int k) {
                 this.x = x;
                 this.y = y;
-                this.count = count;
+                this.cnt = cnt;
                 this.k = k;
             }
         }
