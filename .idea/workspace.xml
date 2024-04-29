@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="9376">
-      <change afterPath="$PROJECT_DIR$/src/_240429/BFS/_1600_말이되고픈원숭이.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="1600 process">
+      <change afterPath="$PROJECT_DIR$/src/_240429/BFS/_1600.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240429/BFS/_1600_말이되고픈원숭이.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240429/BFS/_1600_말이되고픈원숭이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +85,7 @@
     "Application._1520_내리막길.executor": "Run",
     "Application._1561_놀이공원.executor": "Run",
     "Application._15661_링크와스타트.executor": "Run",
+    "Application._1600.executor": "Run",
     "Application._1600_말이되고픈원숭이.executor": "Run",
     "Application._16947_서울지하철2호선.executor": "Run",
     "Application._16956_늑대와양.executor": "Run",
@@ -188,14 +190,6 @@
       <workItem from="1710354777071" duration="77405000" />
       <workItem from="1711689649602" duration="246684000" />
       <workItem from="1712829350642" duration="215858000" />
-    </task>
-    <task id="LOCAL-00103" summary="2529 process">
-      <option name="closed" value="true" />
-      <created>1711719228335</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1711719228336</updated>
     </task>
     <task id="LOCAL-00104" summary="2529 success">
       <option name="closed" value="true" />
@@ -581,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714227167088</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="1600 process">
+      <option name="closed" value="true" />
+      <created>1714393014555</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1714393014555</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="14888 process" />
     <MESSAGE value="14888 success" />
     <MESSAGE value="11047" />
     <MESSAGE value="11047 success" />
@@ -624,7 +625,8 @@
     <MESSAGE value="16956 process" />
     <MESSAGE value="16956 success" />
     <MESSAGE value="9376" />
-    <option name="LAST_COMMIT_MESSAGE" value="9376" />
+    <MESSAGE value="1600 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="1600 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

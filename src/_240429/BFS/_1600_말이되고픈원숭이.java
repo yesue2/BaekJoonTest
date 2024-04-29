@@ -1,81 +1,82 @@
 package _240429.BFS;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class _1600_말이되고픈원숭이 {
-    static int[] kdx = {-1, -2, -2, -1, 1, 2, 2, 1};
-    static int[] kdy = {-2, -1, 1, 2, 2, 1, -1, -2};
-    static int[] dx = {0, 0, -1, 1};
-    static int[] dy = {-1, 1, 0, 0};
-    static int K, W, H, result;
-    static int[][] map;
-    static boolean[][] visited;
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        K = Integer.parseInt(br.readLine());
+        static int K, W, H;
+        static int[][] map;
+        static int min = Integer.MAX_VALUE;
+        static int[] hdx = {-2, -2, -1, -1, 1, 1, 2, 2};
+        static int[] hdy = {-1, 1, -2, 2, -2, 2, -1, 1};
+        static int[] dx = {0, 1, 0 ,-1};
+        static int[] dy = {1, 0, -1, 0};
+        static boolean[][][] visited;
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        W = Integer.parseInt(st.nextToken());
-        H = Integer.parseInt(st.nextToken());
-        map = new int[W][H];
-        visited = new boolean[W][H];
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
 
-        for (int i = 0; i < H; i++) {
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < W; j++) {
-                map[i][j] = Integer.parseInt(st.nextToken());
-            }
-        }
-        if (bfs()) {
-            System.out.println(result);
-        } else {
-            System.out.println(-1);
-        }
-    }
+            K = scan.nextInt();
+            W = scan.nextInt();
+            H = scan.nextInt();
 
-    static boolean bfs() {
-        Queue<int[]> queue = new LinkedList<>();
-        visited[0][0] = true;
-        queue.add(new int[]{0, 0});
-        int cnt = 0;
-
-        while (!queue.isEmpty()) {
-            int[] xy = queue.poll();
-
-            if (xy[0] == H - 1 && xy[1] == W - 1) {
-                result = map[H-1][W-1];
-                return true;
-            }
-
-            for (int i = 0; i < 8; i++) {
-                int nx = xy[0] + kdx[i];
-                int ny = xy[1] + kdy[i];
-
-                if (cnt == K) {
-                    for (int j = 0; j < 4; j++) {
-                        nx = xy[0] + dx[j];
-                        ny = xy[1] + dy[j];
-                    }
-                    if (nx >= 0 && ny >= 0 && nx < H && ny < W && map[nx][ny] != 1 && !visited[nx][ny]) {
-                        queue.add(new int[]{nx, ny});
-                        visited[nx][ny] = true;
-                        map[nx][ny] = map[xy[0]][xy[1]]+1;
-                    }
-                }
-                if (nx >= 0 && ny >= 0 && nx < H && ny < W && map[nx][ny] != 1 && !visited[nx][ny]) {
-                    queue.add(new int[]{nx, ny});
-                    cnt++;
-                    visited[nx][ny] = true;
-                    map[nx][ny] = map[xy[0]][xy[1]]+1;
+            map = new int[H][W];
+            for(int i = 0; i < H; i++) {
+                for(int j = 0; j < W; j++) {
+                    map[i][j] = scan.nextInt();
                 }
             }
+
+            visited = new boolean[H][W][K + 1];
+            min = bfs(0, 0);
+
+            if(min == Integer.MAX_VALUE) System.out.println("-1");
+            else System.out.println(min);
         }
-        return false;
-    }
+
+        public static int bfs(int x, int y) {
+            Queue<Node> queue = new LinkedList<>();
+            queue.offer(new Node(x, y, 0, K));
+            visited[x][y][K] = true;
+
+            while(!queue.isEmpty()) {
+                Node cur = queue.poll();
+                if(cur.x == H - 1 && cur.y == W - 1) return cur.count;
+
+                for(int i = 0; i < 4; i++) {
+                    int nx = cur.x + dx[i];
+                    int ny = cur.y + dy[i];
+                    if(nx >= 0 && ny >= 0 && nx < H && ny < W && !visited[nx][ny][cur.k] && map[nx][ny] == 0) {
+                        visited[nx][ny][cur.k] = true;
+                        queue.offer(new Node(nx, ny, cur.count + 1, cur.k));
+                    }
+                }
+
+                if(cur.k > 0) {
+                    for(int i = 0; i < 8; i++) {
+                        int nx = cur.x + hdx[i];
+                        int ny = cur.y + hdy[i];
+                        if(nx >= 0 && ny >= 0 && nx < H && ny < W && !visited[nx][ny][cur.k - 1] && map[nx][ny] == 0) {
+                            visited[nx][ny][cur.k - 1] = true;
+                            queue.offer(new Node(nx, ny, cur.count + 1, cur.k - 1));
+                        }
+                    }
+                }
+            }
+            return min;
+        }
+
+        public static class Node {
+            int x;
+            int y;
+            int count;
+            int k;
+
+            public Node(int x, int y, int count, int k) {
+                this.x = x;
+                this.y = y;
+                this.count = count;
+                this.k = k;
+            }
+        }
+
 }
