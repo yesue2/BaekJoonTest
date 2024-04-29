@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="9376">
+      <change afterPath="$PROJECT_DIR$/src/_240429/BFS/_1600_말이되고픈원숭이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +84,7 @@
     "Application._1520_내리막길.executor": "Run",
     "Application._1561_놀이공원.executor": "Run",
     "Application._15661_링크와스타트.executor": "Run",
+    "Application._1600_말이되고픈원숭이.executor": "Run",
     "Application._16947_서울지하철2호선.executor": "Run",
     "Application._16956_늑대와양.executor": "Run",
     "Application._1697.executor": "Run",
