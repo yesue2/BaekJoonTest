@@ -1,8 +1,6 @@
 package _240429.BFS;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 public class _4991_로봇청소기 {
@@ -58,10 +56,6 @@ public class _4991_로봇청소기 {
         int nh = h.get(num);
         int nw = w.get(num);
         boolean[][] visited = new boolean[nh][nw];
-        boolean[][] cleaned = new boolean[nh][nw];
-
-        visited[x][y] = true;
-        queue.offer(new Node(x, y, 0, null, map.get(num), visited));
 
         int totalDirty = 0;
         for (int i = 0; i < nh; i++) {   // 전체 칸 돌면서 남은 더러운 칸이 있는지 확인
@@ -71,33 +65,22 @@ public class _4991_로봇청소기 {
             }
         }
 
-        int tmpTotal = totalDirty;
+        visited[x][y] = true;
+        queue.offer(new Node(x, y, 0, null, map.get(num), visited, totalDirty));
+
         while (!queue.isEmpty()) {
             Node cur = queue.poll();
 
-            if (map.get(num)[cur.x][cur.y] == '*' && !cleaned[cur.x][cur.y]) {  // 더러운 칸 도달 시
+            if (cur.map[cur.x][cur.y] == '*') {  // 더러운 칸 도달 시
                 System.out.println("청소된 더러운 칸 : " + cur.x + " " + cur.y);
-                cleaned[cur.x][cur.y] = true;
-                totalDirty--;  // 남은 더러운 칸 수 감소
+                cur.map[cur.x][cur.y] = '.';
+                cur.totalDirty--;  // 남은 더러운 칸 수 감소
+                printPath(cur);  // 경로 출력
 
-                if (totalDirty == 0) {
-                    for (int i = 0; i < nh; i++) {
-                        for (int j = 0; j < nw; j++) {
-                            if (cleaned[i][j] && cur.map[i][j] == '.') {
-                                System.out.println("더러운 칸 조건 부합 : " + i + " " + j);
-                                tmpTotal--;
-                            } else if (cleaned[i][j] && cur.map[i][j] == '*') {
-                                cleaned[i][j] = false;
-                                totalDirty++;
-                            }
-                        }
-                    }
-                    System.out.println("연산된 더러운 칸, 더러운 칸과 같은 수 : " + totalDirty + " " + tmpTotal);
-                    if (tmpTotal == 0) {
-                        printPath(cur);  // 경로 출력
-                        result.add(cur.dis);  // 모든 더러운 칸을 청소했으면 결과 추가
-                        return true;
-                    }
+                if (cur.totalDirty == 0) {
+                    printPath(cur);  // 경로 출력
+                    result.add(cur.dis);  // 모든 더러운 칸을 청소했으면 결과 추가
+                    return true;
                 }
             }
 
@@ -107,16 +90,13 @@ public class _4991_로봇청소기 {
 
                 if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !cur.visited[nx][ny] && map.get(num)[nx][ny] != 'x') {
                     cur.visited[nx][ny] = true;
-                    char[][] tmpMap = map.get(num);
-                    if (tmpMap[cur.x][cur.y] == '*') {
-                        tmpMap[cur.x][cur.y] = '.';
-                    }
-                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, tmpMap, cur.visited));
+                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, cur.map, cur.visited, cur.totalDirty));
                 }
             }
         }
         return false;
     }
+
     static void printPath(Node node) {
         Stack<Node> path = new Stack<>();
         while (node != null) {
@@ -131,19 +111,21 @@ public class _4991_로봇청소기 {
         }
         System.out.println("End");
     }
+
     static class Node {
-        int x, y, dis;
+        int x, y, dis, totalDirty;
         Node parent;
         char[][] map;
         boolean[][] visited;
 
-        Node(int x, int y, int dis, Node parent, char[][] map, boolean[][] visited) {
+        Node(int x, int y, int dis, Node parent, char[][] map, boolean[][] visited, int totalDirty) {
             this.x = x;
             this.y = y;
             this.dis = dis;
             this.parent = parent;
             this.map = map;
             this.visited = visited;
+            this.totalDirty = totalDirty;
         }
     }
 }
