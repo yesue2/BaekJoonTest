@@ -61,7 +61,7 @@ public class _4991_로봇청소기 {
         boolean[][] cleaned = new boolean[nh][nw];
 
         visited[x][y] = true;
-        queue.offer(new Node(x, y, 0, null, map.get(num)));
+        queue.offer(new Node(x, y, 0, null, map.get(num), visited));
 
         int totalDirty = 0;
         for (int i = 0; i < nh; i++) {   // 전체 칸 돌면서 남은 더러운 칸이 있는지 확인
@@ -75,7 +75,7 @@ public class _4991_로봇청소기 {
         while (!queue.isEmpty()) {
             Node cur = queue.poll();
 
-            if (map.get(num)[cur.x][cur.y] == '*') {  // 더러운 칸 도달 시
+            if (map.get(num)[cur.x][cur.y] == '*' && !cleaned[cur.x][cur.y]) {  // 더러운 칸 도달 시
                 System.out.println("청소된 더러운 칸 : " + cur.x + " " + cur.y);
                 cleaned[cur.x][cur.y] = true;
                 totalDirty--;  // 남은 더러운 칸 수 감소
@@ -84,6 +84,7 @@ public class _4991_로봇청소기 {
                     for (int i = 0; i < nh; i++) {
                         for (int j = 0; j < nw; j++) {
                             if (cleaned[i][j] && cur.map[i][j] == '.') {
+                                System.out.println("더러운 칸 조건 부합 : " + i + " " + j);
                                 tmpTotal--;
                             } else if (cleaned[i][j] && cur.map[i][j] == '*') {
                                 cleaned[i][j] = false;
@@ -91,6 +92,7 @@ public class _4991_로봇청소기 {
                             }
                         }
                     }
+                    System.out.println("연산된 더러운 칸, 더러운 칸과 같은 수 : " + totalDirty + " " + tmpTotal);
                     if (tmpTotal == 0) {
                         printPath(cur);  // 경로 출력
                         result.add(cur.dis);  // 모든 더러운 칸을 청소했으면 결과 추가
@@ -103,13 +105,13 @@ public class _4991_로봇청소기 {
                 int nx = cur.x + dx[i];
                 int ny = cur.y + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !visited[nx][ny] && map.get(num)[nx][ny] != 'x') {
-                    visited[nx][ny] = true;
+                if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !cur.visited[nx][ny] && map.get(num)[nx][ny] != 'x') {
+                    cur.visited[nx][ny] = true;
                     char[][] tmpMap = map.get(num);
                     if (tmpMap[cur.x][cur.y] == '*') {
                         tmpMap[cur.x][cur.y] = '.';
                     }
-                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, tmpMap));
+                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, tmpMap, cur.visited));
                 }
             }
         }
@@ -133,13 +135,15 @@ public class _4991_로봇청소기 {
         int x, y, dis;
         Node parent;
         char[][] map;
+        boolean[][] visited;
 
-        Node(int x, int y, int dis, Node parent, char[][] map) {
+        Node(int x, int y, int dis, Node parent, char[][] map, boolean[][] visited) {
             this.x = x;
             this.y = y;
             this.dis = dis;
             this.parent = parent;
             this.map = map;
+            this.visited = visited;
         }
     }
 }
