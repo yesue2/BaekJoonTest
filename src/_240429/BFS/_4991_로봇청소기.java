@@ -6,51 +6,46 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 public class _4991_로봇청소기 {
-    static List<Integer> w;
-    static List<Integer> h;
+    static List<Integer> w, h, result;
     static List<char[][]> map;
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
-    static boolean[][] visited;
-    static int cnt;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        int tw = 1;
-        int th = 1;
-        int c = 0;
 
         w = new ArrayList<>();
         h = new ArrayList<>();
+        map = new ArrayList<>();
+        result = new ArrayList<>();
 
-        w.add(Integer.parseInt(st.nextToken()));
-        h.add(Integer.parseInt(st.nextToken()));
+        while (true) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            int tw = Integer.parseInt(st.nextToken());
+            int th = Integer.parseInt(st.nextToken());
 
-        while (!(tw == 0 && th == 0)) {
-            map = new ArrayList<>();
-            for (int i = 0; i < h.get(c); i++) {
-                String tmp = br.readLine();
-                for (int j = 0; j < w.get(c); j++) {
-                    map.get(c)[i][j] = tmp.charAt(j);
-                }
-            }
-            c++;
+            if (tw == 0 && th == 0) break;  // 입력 종료 조건
 
-            st = new StringTokenizer(br.readLine());
-            tw = Integer.parseInt(st.nextToken());
-            th = Integer.parseInt(st.nextToken());
             w.add(tw);
             h.add(th);
+
+            char[][] currentMap = new char[th][tw];
+            for (int i = 0; i < th; i++) {
+                String tmp = br.readLine();
+                currentMap[i] = tmp.toCharArray();  // 문자열을 char 배열로 변환
+            }
+            map.add(currentMap);
         }
 
-        for (int i = 0; i < h.size(); i++) {
+        for (int i = 0; i < map.size(); i++) {
             for (int j = 0; j < h.get(i); j++) {
                 for (int k = 0; k < w.get(i); k++) {
                     if (map.get(i)[j][k] == 'o') {
-                        if(bfs(j, k, i)) {
-                            System.out.println();
+                        System.out.println("j, k : " + j + " " + k);
+                        if (bfs(j, k, i)) {
+                            System.out.println(result.get(i));
+                        } else {
+                            System.out.println(-1);
                         }
                     }
                 }
@@ -59,47 +54,92 @@ public class _4991_로봇청소기 {
     }
 
     static boolean bfs(int x, int y, int num) {
-        Queue<int[]> queue = new LinkedList<>();
+        Queue<Node> queue = new LinkedList<>();
         int nh = h.get(num);
         int nw = w.get(num);
-        visited = new boolean[nh][nw];
+        boolean[][] visited = new boolean[nh][nw];
+        boolean[][] cleaned = new boolean[nh][nw];
 
         visited[x][y] = true;
-        queue.offer(new int[]{x, y});
+        queue.offer(new Node(x, y, 0, null, map.get(num)));
 
-        while (!queue.isEmpty()) {
-            int[] xy = queue.poll();
-            int durty = 0;
-            cnt = 0;  // 최단거리 값
-            int non = 0;  // 인접한 칸 중 더러운 칸이 아닌 칸의 수
-
-            for (int i = 0; i < nh; i++) {   // 전체 칸 돌면서 남은 더러운 칸이 있는지 확인
-                for (int j = 0; j < nw; j++) {
-                    if (map.get(num)[i][j] == '*')
-                        durty++;
-                }
+        int totalDirty = 0;
+        for (int i = 0; i < nh; i++) {   // 전체 칸 돌면서 남은 더러운 칸이 있는지 확인
+            for (int j = 0; j < nw; j++) {
+                if (map.get(num)[i][j] == '*')
+                    totalDirty++;
             }
-            if (durty == 0) {  // 더러운 칸이 더이상 없을 때
-                return true;
+        }
+
+        int tmpTotal = totalDirty;
+        while (!queue.isEmpty()) {
+            Node cur = queue.poll();
+
+            if (map.get(num)[cur.x][cur.y] == '*') {  // 더러운 칸 도달 시
+                System.out.println("청소된 더러운 칸 : " + cur.x + " " + cur.y);
+                cleaned[cur.x][cur.y] = true;
+                totalDirty--;  // 남은 더러운 칸 수 감소
+
+                if (totalDirty == 0) {
+                    for (int i = 0; i < nh; i++) {
+                        for (int j = 0; j < nw; j++) {
+                            if (cleaned[i][j] && cur.map[i][j] == '.') {
+                                tmpTotal--;
+                            } else if (cleaned[i][j] && cur.map[i][j] == '*') {
+                                cleaned[i][j] = false;
+                                totalDirty++;
+                            }
+                        }
+                    }
+                    if (tmpTotal == 0) {
+                        printPath(cur);  // 경로 출력
+                        result.add(cur.dis);  // 모든 더러운 칸을 청소했으면 결과 추가
+                        return true;
+                    }
+                }
             }
 
             for (int i = 0; i < 4; i++) {
-                int nx = xy[0] + dx[i];
-                int ny = xy[1] + dy[i];
+                int nx = cur.x + dx[i];
+                int ny = cur.y + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !visited[nx][ny] && map.get(num)[nx][ny] == '*') {
+                if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !visited[nx][ny] && map.get(num)[nx][ny] != 'x') {
                     visited[nx][ny] = true;
-                    queue.offer(new int[]{nx, ny});
-                    map.get(num)[nx][ny] = '.';
-                    cnt++;
-                } else {
-                    non++;
+                    char[][] tmpMap = map.get(num);
+                    if (tmpMap[cur.x][cur.y] == '*') {
+                        tmpMap[cur.x][cur.y] = '.';
+                    }
+                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, tmpMap));
                 }
-            }
-            if (non == 4) {  // 인접한 칸 모두 더러운 칸이 아니고, 가구가 아닌 칸이 있을 때 탐색
-
             }
         }
         return false;
+    }
+    static void printPath(Node node) {
+        Stack<Node> path = new Stack<>();
+        while (node != null) {
+            path.push(node);
+            node = node.parent; // 부모 노드를 통해 역추적
+        }
+
+        // 경로 역순 출력
+        while (!path.isEmpty()) {
+            Node step = path.pop();
+            System.out.println("(" + step.x + ", " + step.y + ")");
+        }
+        System.out.println("End");
+    }
+    static class Node {
+        int x, y, dis;
+        Node parent;
+        char[][] map;
+
+        Node(int x, int y, int dis, Node parent, char[][] map) {
+            this.x = x;
+            this.y = y;
+            this.dis = dis;
+            this.parent = parent;
+            this.map = map;
+        }
     }
 }
