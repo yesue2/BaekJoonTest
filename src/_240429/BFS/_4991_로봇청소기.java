@@ -8,6 +8,11 @@ public class _4991_로봇청소기 {
     static List<char[][]> map;
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
+    static int[][][][] dis;  // x, y 지점에서 nx, ny 지점까지의 최단거리 저장
+    static List<Node> dirty;
+    static boolean[] visited;
+    static int minDis, startX = -1, startY = -1;
+
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -29,103 +34,93 @@ public class _4991_로봇청소기 {
 
             char[][] currentMap = new char[th][tw];
             for (int i = 0; i < th; i++) {
-                String tmp = br.readLine();
-                currentMap[i] = tmp.toCharArray();  // 문자열을 char 배열로 변환
+                currentMap[i] = br.readLine().toCharArray();  // 문자열을 char 배열로 변환
             }
             map.add(currentMap);
         }
 
         for (int i = 0; i < map.size(); i++) {
+            dirty = new ArrayList<>();
+            dis = new int[h.get(i)][w.get(i)][h.get(i)][w.get(i)];
             for (int j = 0; j < h.get(i); j++) {
                 for (int k = 0; k < w.get(i); k++) {
                     if (map.get(i)[j][k] == 'o') {
                         System.out.println("j, k : " + j + " " + k);
-                        if (bfs(j, k, i)) {
-                            System.out.println(result.get(i));
-                        } else {
-                            System.out.println(-1);
-                        }
+                        startX = j;
+                        startY = k;
+                    } else if (map.get(i)[j][k] == 'x') {
+                        dirty.add(new Node(j, k));
                     }
+                    bfs(j, k, i);  // 시작 지점부터 모든 접근 가능 지점까지의 최단거리 저장
                 }
             }
+            System.out.println("BFS 끝");
+
+            visited = new boolean[dirty.size()];
+            minDis = Integer.MAX_VALUE;
+            dfs(0, new int[dirty.size()]);
+            System.out.println("DFS 끝 : " + minDis);
+
+            if (minDis == Integer.MAX_VALUE) System.out.println(-1);
+            else System.out.println(minDis);
+            dirty.clear();
         }
     }
 
-    static boolean bfs(int x, int y, int num) {
+    static void bfs(int x, int y, int num) {
         Queue<Node> queue = new LinkedList<>();
-        int nh = h.get(num);
-        int nw = w.get(num);
-        boolean[][] visited = new boolean[nh][nw];
-
-        int totalDirty = 0;
-        for (int i = 0; i < nh; i++) {   // 전체 칸 돌면서 남은 더러운 칸이 있는지 확인
-            for (int j = 0; j < nw; j++) {
-                if (map.get(num)[i][j] == '*')
-                    totalDirty++;
-            }
-        }
-
-        visited[x][y] = true;
-        queue.offer(new Node(x, y, 0, null, map.get(num), visited, totalDirty));
+        queue.offer(new Node(x, y));
+        dis[x][y][x][y] = 0;
 
         while (!queue.isEmpty()) {
             Node cur = queue.poll();
-
-            if (cur.map[cur.x][cur.y] == '*') {  // 더러운 칸 도달 시
-                System.out.println("청소된 더러운 칸 : " + cur.x + " " + cur.y);
-                cur.map[cur.x][cur.y] = '.';
-                cur.totalDirty--;  // 남은 더러운 칸 수 감소
-                printPath(cur);  // 경로 출력
-
-                if (cur.totalDirty == 0) {
-                    printPath(cur);  // 경로 출력
-                    result.add(cur.dis);  // 모든 더러운 칸을 청소했으면 결과 추가
-                    return true;
-                }
-            }
-
             for (int i = 0; i < 4; i++) {
                 int nx = cur.x + dx[i];
                 int ny = cur.y + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < nh && ny < nw && !cur.visited[nx][ny] && map.get(num)[nx][ny] != 'x') {
-                    cur.visited[nx][ny] = true;
-                    queue.offer(new Node(nx, ny, cur.dis + 1, cur, cur.map, cur.visited, cur.totalDirty));
-                }
+                if (nx < 0 || ny < 0 || nx >= h.get(num) || ny >= w.get(num)) continue;
+                if (map.get(num)[nx][ny] == 'x') continue;
+                if (dis[x][y][nx][ny] != 0) continue;
+
+                queue.offer(new Node(nx, ny));
+                dis[x][y][nx][ny] = dis[x][y][cur.x][cur.y] + 1;
+
             }
         }
-        return false;
     }
 
-    static void printPath(Node node) {
-        Stack<Node> path = new Stack<>();
-        while (node != null) {
-            path.push(node);
-            node = node.parent; // 부모 노드를 통해 역추적
+    static void dfs(int depth, int[] perm) {
+        if (depth == dirty.size()) {
+            int distance = 0;
+
+            for (int i = 0; i < perm.length; i++) {
+                Node cur = dirty.get(perm[i]);
+                if (dis[startX][startY][cur.x][cur.y] == 0)
+                    return;
+                distance += dis[startX][startY][cur.x][cur.y];
+                startX = cur.x;
+                startY = cur.y;
+            }
+            minDis = Math.min(minDis, distance);
+            return;
         }
 
-        // 경로 역순 출력
-        while (!path.isEmpty()) {
-            Node step = path.pop();
-            System.out.println("(" + step.x + ", " + step.y + ")");
+        for (int i = 0; i < dirty.size(); i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                perm[depth] = i;
+                dfs(depth + 1, perm);
+                visited[i] = false;
+            }
         }
-        System.out.println("End");
     }
 
     static class Node {
-        int x, y, dis, totalDirty;
-        Node parent;
-        char[][] map;
-        boolean[][] visited;
+        int x, y;
 
-        Node(int x, int y, int dis, Node parent, char[][] map, boolean[][] visited, int totalDirty) {
+        Node(int x, int y) {
             this.x = x;
             this.y = y;
-            this.dis = dis;
-            this.parent = parent;
-            this.map = map;
-            this.visited = visited;
-            this.totalDirty = totalDirty;
         }
     }
 }
