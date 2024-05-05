@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="4991 success">
-      <change afterPath="$PROJECT_DIR$/src/_240502/BFS/_2151_거울설치.java" afterDir="false" />
+    <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2151 process">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_240502/BFS/_2151_거울설치.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240502/BFS/_2151_거울설치.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +190,6 @@
       <workItem from="1710354777071" duration="77405000" />
       <workItem from="1711689649602" duration="246684000" />
       <workItem from="1712829350642" duration="215858000" />
-    </task>
-    <task id="LOCAL-00111" summary="14888 success">
-      <option name="closed" value="true" />
-      <created>1712072871063</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1712072871063</updated>
     </task>
     <task id="LOCAL-00112" summary="11047">
       <option name="closed" value="true" />
@@ -583,7 +575,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714659879976</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="2151 process">
+      <option name="closed" value="true" />
+      <created>1714735118887</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1714735118887</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +601,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1931 success" />
     <MESSAGE value="11399 success" />
     <MESSAGE value="1080 process" />
     <MESSAGE value="23290 process" />
@@ -626,7 +625,8 @@
     <MESSAGE value="1600 success" />
     <MESSAGE value="4991 process" />
     <MESSAGE value="4991 success" />
-    <option name="LAST_COMMIT_MESSAGE" value="4991 success" />
+    <MESSAGE value="2151 process" />
+    <option name="LAST_COMMIT_MESSAGE" value="2151 process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
