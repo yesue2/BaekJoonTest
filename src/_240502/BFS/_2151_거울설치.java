@@ -3,9 +3,7 @@ package _240502.BFS;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class _2151_거울설치 {
@@ -78,7 +76,7 @@ public class _2151_거울설치 {
         if (nx < N && ny < N && nx >= 0 && ny >= 0 && map[nx][ny] != '*') {
             visited[nx][ny] = true;
             if (map[nx][ny] == '!') {
-                map[nx][ny] = ''
+                map[nx][ny] = '/';
             }
             queue.offer(new int[]{nx, ny});
 
