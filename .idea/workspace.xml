@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b27758e1-714e-4837-a0c3-a5a23b542871" name="Changes" comment="2151 process">
+      <change afterPath="$PROJECT_DIR$/src/_240519/BFS/_3055_탈출.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_240502/BFS/_2151_거울설치.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_240502/BFS/_2151_거울설치.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +99,7 @@
     "Application._23290_마법사상어와복제.executor": "Run",
     "Application._2529_부등호.executor": "Run",
     "Application._2667.executor": "Debug",
+    "Application._3055_탈출.executor": "Run",
     "Application._3085.executor": "Run",
     "Application._4991_로봇청소기.executor": "Run",
     "Application._6064_카잉달력.executor": "Run",
@@ -190,14 +191,6 @@
       <workItem from="1710354777071" duration="77405000" />
       <workItem from="1711689649602" duration="246684000" />
       <workItem from="1712829350642" duration="215858000" />
-    </task>
-    <task id="LOCAL-00113" summary="11047">
-      <option name="closed" value="true" />
-      <created>1712227677032</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1712227677032</updated>
     </task>
     <task id="LOCAL-00114" summary="11047 success">
       <option name="closed" value="true" />
@@ -583,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714898493204</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="2151 process">
+      <option name="closed" value="true" />
+      <created>1714993689620</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1714993689620</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
