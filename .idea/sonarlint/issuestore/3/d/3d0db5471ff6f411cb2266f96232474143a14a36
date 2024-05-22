@@ -1,15 +1,0 @@
-
-m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ì£‹8ğä¾õß1
-i	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(šä‚â8ëµ½õß1
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µå¨ 8ìµ½õß1
-X
-java:S1854"6Remove this useless assignment to local variable "st".(ÿÔ°ÿÿÿÿÿ8›Ù¿õß1
-Y
-java:S1854"7Remove this useless assignment to local variable "arr".(¢Ñïúÿÿÿÿ8ÀÛÀõß1
-D
-java:S1481"'Remove this unused "st" local variable.(ÍñÜø8”›¿õß1
-J
-java:S1481"(Remove this unused "arr" local variable.(¢Ñïúÿÿÿÿ8ÁÛÀõß1
-J	java:S108")Either remove or fill this block of code.(£º¾âüÿÿÿÿ8œÙ¿õß1
-]
-java:S1128";Remove this unused import 'java.util.stream.StreamSupport'.(ö°€ÿÿÿÿÿ8€¾Áõß1

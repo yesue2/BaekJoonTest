@@ -1,16 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂšŸüÿÿÿÿ8´‚ô×1
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»»¦üÿÿÿÿ8´‚ô×1
-n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(†´úåùÿÿÿÿ8‚´‚ô×1
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¯Ç"8‚´‚ô×1
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñÆ æ8…´‚ô×1
-Y
-java:S1854"7Remove this useless assignment to local variable "arr".(¥Æ¡œşÿÿÿÿ8…´‚ô×1
-W
-java:S1854"5Remove this useless assignment to local variable "N".(ÂšŸüÿÿÿÿ8…´‚ô×1
-H
-java:S1481"&Remove this unused "N" local variable.(ÂšŸüÿÿÿÿ8‡´‚ô×1
-J
-java:S1481"(Remove this unused "arr" local variable.(¥Æ¡œşÿÿÿÿ8‡´‚ô×1
-J	java:S108")Either remove or fill this block of code.(º—¥ÿúÿÿÿÿ8‡´‚ô×1

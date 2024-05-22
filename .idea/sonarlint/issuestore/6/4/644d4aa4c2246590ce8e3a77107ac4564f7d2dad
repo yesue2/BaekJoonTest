@@ -1,14 +1,0 @@
-
-i	java:S101
-"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ú—‘§8©Ò–Ú1
-i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(íß„”8©Ò–Ú1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÇŸ«Èüÿÿÿÿ8©Ò–Ú1
-n
-java:S3008"LRename this field "M" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ï¹Åüÿÿÿÿ8ïÒ–Ú1
-n
-java:S3008"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûîèõşÿÿÿÿ8ïÒ–Ú1
-o
-java:S3776!"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(œû¿Ø8Æ²ä–Ú1
-L	java:S106:"+Replace this use of System.out by a logger.(óŠÕÎÿÿÿÿÿ8ñÒ–Ú1
-L	java:S106D"+Replace this use of System.out by a logger.(¡ò†şÿÿÿÿ8Ç²ä–Ú1
-G	java:S106J"+Replace this use of System.out by a logger.(â¯˜‚8Î‚ğ–Ú1
