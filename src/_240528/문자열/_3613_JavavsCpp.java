@@ -46,7 +46,6 @@ public class _3613_JavavsCpp {
             }
             if (isJava && c == '_') return;  // 형식이 섞여서 주어졌을 때(대문자와 _)
 
-
             if (c == '_') {
                 isCpp = true;
                 if (i + 1 < sb.length()) {
