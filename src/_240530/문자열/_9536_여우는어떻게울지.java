@@ -16,7 +16,7 @@ public class _9536_여우는어떻게울지 {
         for (int i = 0; i < t; i++) {
             String tmp = br.readLine();
             String[] sound = tmp.split(" ");
-            soundList = new ArrayList<>(Arrays.asList(sound));
+            soundList = new ArrayList<>(Arrays.asList(sound));  // Arrays.asList(): 주어진 배열을 고정 크기 리스트로 변환
             anotherSound = new ArrayList<>();
 
             while (true) {
