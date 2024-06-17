@@ -28,9 +28,9 @@ public class _5427_불 {
                 String tmp = br.readLine();
                 for (int k = 0; k < w; k++) {
                     map[j][k] = tmp.charAt(k);
-                    if (map[j][k] == '*') fireQueue.add(new int[]{j, k});
+                    if (map[j][k] == '*') fireQueue.add(new int[]{j, k});  // 불의 위치
                     if (map[j][k] == '@') {
-                        sangQueue.add(new int[]{j, k});
+                        sangQueue.add(new int[]{j, k});  // 상근이의 위치
                         visited[j][k] = true;
                     }
                 }
