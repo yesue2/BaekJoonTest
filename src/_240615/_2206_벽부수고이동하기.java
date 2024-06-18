@@ -80,7 +80,6 @@ public class _2206_벽부수고이동하기 {
                     visited[nx][ny][1] = true;
                 }
             }
-
         }
         return -1;
     }
