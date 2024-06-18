@@ -64,7 +64,7 @@ public class _2206_벽부수고이동하기 {
                 if (nx < 0 || ny < 0 || nx >= n || ny >= m) continue;
 
                 if (map[nx][ny] == 0) {
-                    // nx, ny가 벽일 때
+                    // nx, ny가 벽이 아닐 때
                     if (!isBroken && !visited[nx][ny][0]) {
                         // 벽을 부순적이 없고, nx, ny의 벽을 부수지 않고 방문한 적이 없을 때
                         queue.offer(new Person(nx, ny, dis + 1, false));
