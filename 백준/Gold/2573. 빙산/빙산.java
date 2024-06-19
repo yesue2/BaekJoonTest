@@ -6,6 +6,7 @@ public class Main {
     static int[][] arr;
     static int[] dx = {1, -1, 0, 0};
     static int[] dy = {0, 0, 1, -1};
+    static boolean[][] visitedCnt;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,79 +23,79 @@ public class Main {
             }
         }
 
-        int year = 0;
+        int result = 0;
         while (true) {
-            int chunkCount = countChunks();
-            if (chunkCount == 0) {
-                System.out.println(0);
-                break;
-            } else if (chunkCount > 1) {
-                System.out.println(year);
-                break;
-            }
+            result++;
 
-            meltIceberg();
-            year++;
-        }
-    }
-
-    static int countChunks() {
-        boolean[][] visited = new boolean[n][m];
-        int count = 0;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (arr[i][j] > 0 && !visited[i][j]) {
-                    bfs(i, j, visited);
-                    count++;
-                }
-            }
-        }
-        return count;
-    }
-
-    static void bfs(int x, int y, boolean[][] visited) {
-        Queue<int[]> queue = new LinkedList<>();
-        queue.offer(new int[]{x, y});
-        visited[x][y] = true;
-
-        while (!queue.isEmpty()) {
-            int[] curr = queue.poll();
-            for (int i = 0; i < 4; i++) {
-                int nx = curr[0] + dx[i];
-                int ny = curr[1] + dy[i];
-
-                if (nx < 0 || ny < 0 || nx >= n || ny >= m) continue;
-                if (!visited[nx][ny] && arr[nx][ny] > 0) {
-                    queue.offer(new int[]{nx, ny});
-                    visited[nx][ny] = true;
-                }
-            }
-        }
-    }
-
-    static void meltIceberg() {
-        int[][] meltAmount = new int[n][m];
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                if (arr[i][j] > 0) {
-                    for (int k = 0; k < 4; k++) {
-                        int nx = i + dx[k];
-                        int ny = j + dy[k];
-
-                        if (nx >= 0 && ny >= 0 && nx < n && ny < m && arr[nx][ny] == 0) {
-                            meltAmount[i][j]++;
+            // 빙산 녹이기
+            int[][] nextArr = new int[n][m];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (arr[i][j] > 0) {
+                        int seaCount = 0;
+                        for (int d = 0; d < 4; d++) {
+                            int nx = i + dx[d];
+                            int ny = j + dy[d];
+                            if (nx >= 0 && ny >= 0 && nx < n && ny < m && arr[nx][ny] == 0) {
+                                seaCount++;
+                            }
                         }
+                        nextArr[i][j] = Math.max(arr[i][j] - seaCount, 0);
                     }
                 }
             }
-        }
+            arr = nextArr;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                arr[i][j] -= meltAmount[i][j];
-                if (arr[i][j] < 0) arr[i][j] = 0;
+            // 빙산 덩어리 세기
+            int cnt = 0;
+            visitedCnt = new boolean[n][m];
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (arr[i][j] > 0 && !visitedCnt[i][j]) {
+                        bfs(i, j);
+                        cnt++;
+                    }
+                }
+            }
+
+            if (cnt > 1) {
+                System.out.println(result);
+                return;
+            }
+
+            boolean allMelted = true;
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (arr[i][j] > 0) {
+                        allMelted = false;
+                        break;
+                    }
+                }
+                if (!allMelted) break;
+            }
+            if (allMelted) {
+                System.out.println(0);
+                return;
+            }
+        }
+    }
+
+    static void bfs(int x, int y) {
+        Queue<int[]> queue = new LinkedList<>();
+        queue.offer(new int[]{x, y});
+        visitedCnt[x][y] = true;
+
+        while (!queue.isEmpty()) {
+            int[] xy = queue.poll();
+            for (int i = 0; i < 4; i++) {
+                int nx = xy[0] + dx[i];
+                int ny = xy[1] + dy[i];
+
+                if (nx < 0 || ny < 0 || nx >= n || ny >= m) continue;
+                if (!visitedCnt[nx][ny] && arr[nx][ny] > 0) {
+                    queue.offer(new int[]{nx, ny});
+                    visitedCnt[nx][ny] = true;
+                }
             }
         }
     }
