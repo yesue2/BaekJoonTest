@@ -16,7 +16,6 @@ public class Main {
 
         n = Integer.parseInt(br.readLine());
         map = new int[n][n];
-        visited = new boolean[n][n];
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             for (int j = 0; j < n; j++) {
@@ -38,9 +37,16 @@ public class Main {
 
         // 다리 최소길이 구하기
         int min = Integer.MAX_VALUE;
-        for (int k = 1; k <= landCnt; k++) {
-            visited = new boolean[n][n];
-            min = Math.min(min, getBridge(k));
+        for (int i = 1; i <= landCnt; i++) {
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    // 각 섬마다 시작점 정해서 탐색 => 0이 아닐 경우만 조건에 걸어놓으면 메모리초과
+                    if (map[j][k] == i) {
+                        visited = new boolean[n][n];
+                        min = Math.min(min, getBridge(j, k));
+                    }
+                }
+            }
         }
         System.out.println(min);
     }
@@ -67,38 +73,30 @@ public class Main {
         }
     }
 
-    static int getBridge(int islandNum) {
+    static int getBridge(int x, int y) {
         Queue<int[]> queue = new LinkedList<>();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (map[i][j] == islandNum) {
-                    queue.offer(new int[]{i, j, 0});
-                    visited[i][j] = true;
-                }
-            }
-        }
+        queue.offer(new int[]{x, y, 0});
+        visited[x][y] = true;
 
         while (!queue.isEmpty()) {
             int[] xy = queue.poll();
-            int cx = xy[0];
-            int cy = xy[1];
-            int dist = xy[2];
 
             for (int i = 0; i < 4; i++) {
-                int nx = cx + dx[i];
-                int ny = cy + dy[i];
+                int nx = xy[0] + dx[i];
+                int ny = xy[1] + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < n && ny < n && !visited[nx][ny]) {
-                    if (map[nx][ny] != 0 && map[nx][ny] != islandNum) {
-                        return dist;
+                if (nx >= n || ny >= n || nx < 0 || ny < 0) continue;
+                if (!visited[nx][ny]) {
+                    if (map[nx][ny] != 0 && map[nx][ny] != map[x][y]) {
+                        return xy[2];
                     }
                     if (map[nx][ny] == 0) {
-                        queue.offer(new int[]{nx, ny, dist + 1});
+                        queue.offer(new int[]{nx, ny, xy[2] + 1});
                         visited[nx][ny] = true;
                     }
                 }
             }
         }
-        return Integer.MAX_VALUE; // 연결할 수 없는 경우
+        return Integer.MAX_VALUE;
     }
 }
