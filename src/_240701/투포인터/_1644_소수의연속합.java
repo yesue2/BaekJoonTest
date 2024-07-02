@@ -40,10 +40,8 @@ public class _1644_소수의연속합 {
         Arrays.fill(isPrime, true);
 
         for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (isPrime[i]) {
-                for (int j = i * i; j <= n; j += i) {
-                    isPrime[j] = false;
-                }
+            for (int j = i * i; j <= n; j += i) {
+                isPrime[j] = false;
             }
         }
 
