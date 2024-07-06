@@ -36,6 +36,7 @@ public class _20922_겹치는건싫어 {
             map.put(arr[e], map.getOrDefault(arr[e], 0) + 1);
 
             // 현재 arr[e] 숫자의 개수가 k를 초과했을 때
+            // Map의 모든 값이 k 이하가 될 때 까지 s를 이동시키며 윈도우 축소
             while (map.get(arr[e]) > k) {
                 map.put(arr[s], map.get(arr[s]) - 1);
                 s++;
