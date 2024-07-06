@@ -27,10 +27,9 @@ public class _20922_겹치는건싫어 {
     }
 
     static int twoPointer() {
-        int s = 0, e = 0, len = 0;
+        int s = 0, e = 0;
         int max = Integer.MIN_VALUE;
         Map<Integer, Integer> map = new HashMap<>();
-
 
         while (e < n) {
             map.put(arr[e], map.getOrDefault(arr[e], 0) + 1);
@@ -44,7 +43,6 @@ public class _20922_겹치는건싫어 {
             max = Math.max(max, e - s + 1);
             e++;
         }
-
         return max;
     }
 }
