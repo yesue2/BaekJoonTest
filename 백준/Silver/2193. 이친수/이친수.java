@@ -1,33 +1,27 @@
 import java.io.*;
-import java.util.*;
 
-import java.util.Scanner;
 public class Main {
-
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        scanner.close();
-
-        System.out.println(countPinaryNumbers(N));
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        System.out.println(getResult(n));
     }
 
-    public static long countPinaryNumbers(int N) {
-        if (N == 1) {
+    static long getResult(int n) {
+        if (n == 1) {
             return 1;
         }
 
-        long[][] dp = new long[N + 1][2];
+        long[][] dp = new long[n + 1][2];
 
         dp[1][0] = 0;
         dp[1][1] = 1;
 
-        for (int i = 2; i <= N; i++) {
+        for (int i = 2; i <= n; i++) {
             dp[i][0] = dp[i - 1][0] + dp[i - 1][1];
             dp[i][1] = dp[i - 1][0];
         }
 
-        return dp[N][0] + dp[N][1];
+        return dp[n][0] + dp[n][1];
     }
 }
