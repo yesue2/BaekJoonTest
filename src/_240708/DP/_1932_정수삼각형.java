@@ -1,4 +1,4 @@
-package _240708;
+package _240708.DP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
