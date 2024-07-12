@@ -1,5 +1,10 @@
-import java.io.*;
-import java.util.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 public class Main {
     static int[] board;
@@ -51,16 +56,12 @@ public class Main {
                 int nXY = xy[0] + i;
 
                 if (nXY > 100) continue;
+                
+                if (board[nXY] == 100) return xy[1] + 1;
 
-                nXY = board[nXY];
-
-                if (nXY == 100) {
-                    return xy[1] + 1;
-                }
-
-                if (!visited[nXY]) {
-                    visited[nXY] = true;
-                    queue.offer(new int[] {nXY, xy[1] + 1});
+                if (!visited[board[nXY]]) {
+                    visited[board[nXY]] = true;
+                    queue.offer(new int[] {board[nXY], xy[1] + 1});
                 }
             }
         }
