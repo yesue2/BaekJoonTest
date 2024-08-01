@@ -1,13 +1,15 @@
 import java.io.*;
 import java.util.*;
 
-// 0 => 빈 칸, 1 => 벽, 2 => 바이러스
-// 벽 3개 세우기 필수
 public class Main {
+
+    // 0 => 빈 칸, 1 => 벽, 2 => 바이러스
+    // 벽 3개 세우기 필수
     static int N, M, result, max;
     static int[] dx = {1, -1, 0, 0};
     static int[] dy = {0, 0, 1, -1};
     static int[][] map, tmp;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -28,7 +30,8 @@ public class Main {
         System.out.println(max);
     }
 
-    static void dfs(int cnt) {  // 아무 곳이나 벽을 3개 세우기
+    // 아무 곳이나 벽 3개 세우기
+    static void dfs(int cnt) {
         if (cnt == 3) {
             countArea();
             return;
@@ -38,13 +41,14 @@ public class Main {
             for (int j = 0; j < M; j++) {
                 if (map[i][j] == 0) {
                     map[i][j] = 1;
-                    dfs(cnt+1);
+                    dfs(cnt + 1);
                     map[i][j] = 0;
                 }
             }
         }
     }
 
+    // 안전구역 세기
     static void countArea() {
         bfs();
 
@@ -59,7 +63,8 @@ public class Main {
         max = Math.max(max, result);
     }
 
-    static void bfs() {  // 바이러스 퍼지기
+    // 바이러스 퍼지기
+    static void bfs() {
         Queue<int[]> queue = new LinkedList<>();
         tmp = new int[N][M];
         for (int i = 0; i < N; i++) {
