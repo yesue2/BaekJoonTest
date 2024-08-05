@@ -1,9 +1,5 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
     static int[][] graph;
@@ -31,29 +27,19 @@ public class Main {
 
         int cnt = 0;
         for (int i = 1; i <= N; i++) {
-            if (visited[i] == true) {
-                continue;
-            }
-            bfs(i);
+            if (visited[i]) continue;
+            dfs(i);
             cnt++;
         }
         System.out.println(cnt);
     }
 
-    static void bfs(int start) {
-        Queue<Integer> queue = new LinkedList<>();
-
-        queue.add(start);
+    public static void dfs(int start) {
         visited[start] = true;
 
-        while (!queue.isEmpty()) {
-            start = queue.poll();
-
-            for (int i = 0; i <= N; i++) {
-                if (graph[start][i] == 1 && !visited[i]) {
-                    queue.add(i);
-                    visited[i] = true;
-                }
+        for (int i = 1; i <= N; i++) {
+            if (graph[start][i] == 1 && !visited[i]) {
+                dfs(i);
             }
         }
     }
