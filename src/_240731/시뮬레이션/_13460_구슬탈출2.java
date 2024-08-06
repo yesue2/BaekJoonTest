@@ -52,9 +52,6 @@ public class _13460_구슬탈출2 {
         if (depth > 10) {
             return -1;
         }
-        if (bx == hole[0] && by == hole[1]) {
-
-        }
 
         if (rx == hole[0] && ry == hole[1]) {
             return depth;
