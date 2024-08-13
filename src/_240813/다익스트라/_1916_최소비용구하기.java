@@ -28,6 +28,8 @@ public class _1916_최소비용구하기 {
         st = new StringTokenizer(br.readLine());
         s = Integer.parseInt(st.nextToken());
         e = Integer.parseInt(st.nextToken());
+
+        System.out.println(di());
     }
 
     static long di() {
