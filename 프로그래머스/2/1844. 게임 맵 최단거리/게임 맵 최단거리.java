@@ -2,52 +2,40 @@ import java.io.*;
 import java.util.*;
 
 class Solution {
-    
-    public static int n, m, count;
-    public static boolean[][] visited;
-    public static boolean isSuccess;
-    public static int[] dx = {1, -1, 0, 0};
-    public static int[] dy = {0, 0, 1, -1};
-    
+    static int[][] resultMap;
+    static int[] dx = {1, -1, 0, 0};
+    static int[] dy = {0, 0, 1, -1};
     public int solution(int[][] maps) {
         int answer = -1;
+        resultMap = new int[maps.length][maps[0].length];
         
-        n = maps.length;
-        m = maps[0].length;
-        visited = new boolean[n][m];
-        count = 1;
-        
-        maps = bfs(maps);
-        if(isSuccess) answer = maps[n-1][m-1];
-        
+        bfs(maps);
+        if (resultMap[maps.length-1][maps[0].length-1] != 0) 
+            answer = resultMap[maps.length-1][maps[0].length-1] + 1;
         return answer;
     }
-    
-    public static int[][] bfs(int[][] maps) {
-        Queue<int[]> queue = new LinkedList<>();
-        queue.offer(new int[]{0, 0});
+    static void bfs(int[][] maps) {
+        Queue<int[]> q = new LinkedList<>();
+        boolean[][] visited = new boolean[maps.length][maps[0].length];
+        
+        q.offer(new int[]{0, 0});
         visited[0][0] = true;
         
-        while(!queue.isEmpty()) {
-            int[] xy = queue.poll();
-                        
-            if(xy[0] == n-1 && xy[1] == m-1) {
-                isSuccess = true;
-                return maps;
-            }
+        while(!q.isEmpty()) {
+            int[] xy = q.poll();
             
             for (int i = 0; i < 4; i++) {
-                int nx = xy[0] + dx[i];
-                int ny = xy[1] + dy[i];
+                int nx = dx[i] + xy[0];
+                int ny = dy[i] + xy[1];
                 
-                if(nx >= n || ny >= m || nx < 0 || ny < 0) continue;
-                if(visited[nx][ny]) continue;
-                if(maps[nx][ny] == 0) continue;
-                queue.offer(new int[]{nx, ny});
+                if (nx < 0 || ny < 0 || nx >= maps.length || ny >= maps[0].length) continue;
+                if (visited[nx][ny]) continue;
+                if (maps[nx][ny] == 0) continue;
+                
+                resultMap[nx][ny] = resultMap[xy[0]][xy[1]] + 1;
                 visited[nx][ny] = true;
-                maps[nx][ny] = maps[xy[0]][xy[1]] + 1;
+                q.offer(new int[]{nx, ny});
             }
         }
-        return maps;
     }
 }
